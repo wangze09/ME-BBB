@@ -17,7 +17,8 @@ models/cache/
 .DS_Store
 *.log
 
-# Code-only public release: keep research labels, splits and expert outputs out of public Git
+# Published research datasets under data/ are intentionally tracked; these patterns
+# prevent accidental addition of new unreviewed files within those folders.
 data/reference/
 data/splits/
 data/derived/
