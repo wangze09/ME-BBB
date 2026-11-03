@@ -1,0 +1,262 @@
+[
+  {
+    "endpoint": "Caco-2",
+    "file": "random1.csv",
+    "method": "random_stratified",
+    "seed": 42,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 2412,
+      "pos": 978,
+      "neg": 1434
+    },
+    "val": {
+      "n": 301,
+      "pos": 122,
+      "neg": 179
+    },
+    "test": {
+      "n": 303,
+      "pos": 123,
+      "neg": 180
+    }
+  },
+  {
+    "endpoint": "Caco-2",
+    "file": "random2.csv",
+    "method": "random_stratified",
+    "seed": 43,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 2412,
+      "pos": 978,
+      "neg": 1434
+    },
+    "val": {
+      "n": 301,
+      "pos": 122,
+      "neg": 179
+    },
+    "test": {
+      "n": 303,
+      "pos": 123,
+      "neg": 180
+    }
+  },
+  {
+    "endpoint": "Caco-2",
+    "file": "random3.csv",
+    "method": "random_stratified",
+    "seed": 44,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 2412,
+      "pos": 978,
+      "neg": 1434
+    },
+    "val": {
+      "n": 301,
+      "pos": 122,
+      "neg": 179
+    },
+    "test": {
+      "n": 303,
+      "pos": 123,
+      "neg": 180
+    }
+  },
+  {
+    "endpoint": "Caco-2",
+    "file": "random4.csv",
+    "method": "random_stratified",
+    "seed": 45,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 2412,
+      "pos": 978,
+      "neg": 1434
+    },
+    "val": {
+      "n": 301,
+      "pos": 122,
+      "neg": 179
+    },
+    "test": {
+      "n": 303,
+      "pos": 123,
+      "neg": 180
+    }
+  },
+  {
+    "endpoint": "Caco-2",
+    "file": "random5.csv",
+    "method": "random_stratified",
+    "seed": 46,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 2412,
+      "pos": 978,
+      "neg": 1434
+    },
+    "val": {
+      "n": 301,
+      "pos": 122,
+      "neg": 179
+    },
+    "test": {
+      "n": 303,
+      "pos": 123,
+      "neg": 180
+    }
+  },
+  {
+    "endpoint": "Caco-2",
+    "file": "scaffold1.csv",
+    "method": "scaffold_murcko",
+    "seed": 142,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 2413,
+      "pos": 942,
+      "neg": 1471
+    },
+    "val": {
+      "n": 302,
+      "pos": 154,
+      "neg": 148
+    },
+    "test": {
+      "n": 301,
+      "pos": 127,
+      "neg": 174
+    }
+  },
+  {
+    "endpoint": "Caco-2",
+    "file": "scaffold2.csv",
+    "method": "scaffold_murcko",
+    "seed": 143,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 2413,
+      "pos": 940,
+      "neg": 1473
+    },
+    "val": {
+      "n": 302,
+      "pos": 132,
+      "neg": 170
+    },
+    "test": {
+      "n": 301,
+      "pos": 151,
+      "neg": 150
+    }
+  },
+  {
+    "endpoint": "Caco-2",
+    "file": "scaffold3.csv",
+    "method": "scaffold_murcko",
+    "seed": 144,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 2413,
+      "pos": 948,
+      "neg": 1465
+    },
+    "val": {
+      "n": 302,
+      "pos": 132,
+      "neg": 170
+    },
+    "test": {
+      "n": 301,
+      "pos": 143,
+      "neg": 158
+    }
+  },
+  {
+    "endpoint": "Caco-2",
+    "file": "scaffold4.csv",
+    "method": "scaffold_murcko",
+    "seed": 145,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 2413,
+      "pos": 954,
+      "neg": 1459
+    },
+    "val": {
+      "n": 302,
+      "pos": 138,
+      "neg": 164
+    },
+    "test": {
+      "n": 301,
+      "pos": 131,
+      "neg": 170
+    }
+  },
+  {
+    "endpoint": "Caco-2",
+    "file": "scaffold5.csv",
+    "method": "scaffold_murcko",
+    "seed": 146,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 2413,
+      "pos": 945,
+      "neg": 1468
+    },
+    "val": {
+      "n": 302,
+      "pos": 137,
+      "neg": 165
+    },
+    "test": {
+      "n": 301,
+      "pos": 141,
+      "neg": 160
+    }
+  }
+]

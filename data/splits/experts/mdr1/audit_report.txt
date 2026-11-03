@@ -1,0 +1,4 @@
+MDR1 corrected split audit: PASS
+Rows: 1233
+Input SHA-256: 0f183cc441a93eaa9ac898b685f3115bfafc73cbb1233d109794596fe7fa373b
+All five scaffold splits have zero pairwise scaffold overlap.
