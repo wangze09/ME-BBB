@@ -1,0 +1,262 @@
+[
+  {
+    "endpoint": "MRP",
+    "file": "random1.csv",
+    "method": "random_stratified",
+    "seed": 42,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 491,
+      "pos": 263,
+      "neg": 228
+    },
+    "val": {
+      "n": 61,
+      "pos": 33,
+      "neg": 28
+    },
+    "test": {
+      "n": 62,
+      "pos": 33,
+      "neg": 29
+    }
+  },
+  {
+    "endpoint": "MRP",
+    "file": "random2.csv",
+    "method": "random_stratified",
+    "seed": 43,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 491,
+      "pos": 263,
+      "neg": 228
+    },
+    "val": {
+      "n": 61,
+      "pos": 33,
+      "neg": 28
+    },
+    "test": {
+      "n": 62,
+      "pos": 33,
+      "neg": 29
+    }
+  },
+  {
+    "endpoint": "MRP",
+    "file": "random3.csv",
+    "method": "random_stratified",
+    "seed": 44,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 491,
+      "pos": 263,
+      "neg": 228
+    },
+    "val": {
+      "n": 61,
+      "pos": 33,
+      "neg": 28
+    },
+    "test": {
+      "n": 62,
+      "pos": 33,
+      "neg": 29
+    }
+  },
+  {
+    "endpoint": "MRP",
+    "file": "random4.csv",
+    "method": "random_stratified",
+    "seed": 45,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 491,
+      "pos": 263,
+      "neg": 228
+    },
+    "val": {
+      "n": 61,
+      "pos": 33,
+      "neg": 28
+    },
+    "test": {
+      "n": 62,
+      "pos": 33,
+      "neg": 29
+    }
+  },
+  {
+    "endpoint": "MRP",
+    "file": "random5.csv",
+    "method": "random_stratified",
+    "seed": 46,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 491,
+      "pos": 263,
+      "neg": 228
+    },
+    "val": {
+      "n": 61,
+      "pos": 33,
+      "neg": 28
+    },
+    "test": {
+      "n": 62,
+      "pos": 33,
+      "neg": 29
+    }
+  },
+  {
+    "endpoint": "MRP",
+    "file": "scaffold1.csv",
+    "method": "scaffold_murcko",
+    "seed": 142,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 491,
+      "pos": 272,
+      "neg": 219
+    },
+    "val": {
+      "n": 61,
+      "pos": 28,
+      "neg": 33
+    },
+    "test": {
+      "n": 62,
+      "pos": 29,
+      "neg": 33
+    }
+  },
+  {
+    "endpoint": "MRP",
+    "file": "scaffold2.csv",
+    "method": "scaffold_murcko",
+    "seed": 143,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 491,
+      "pos": 268,
+      "neg": 223
+    },
+    "val": {
+      "n": 61,
+      "pos": 35,
+      "neg": 26
+    },
+    "test": {
+      "n": 62,
+      "pos": 26,
+      "neg": 36
+    }
+  },
+  {
+    "endpoint": "MRP",
+    "file": "scaffold3.csv",
+    "method": "scaffold_murcko",
+    "seed": 144,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 491,
+      "pos": 275,
+      "neg": 216
+    },
+    "val": {
+      "n": 61,
+      "pos": 26,
+      "neg": 35
+    },
+    "test": {
+      "n": 62,
+      "pos": 28,
+      "neg": 34
+    }
+  },
+  {
+    "endpoint": "MRP",
+    "file": "scaffold4.csv",
+    "method": "scaffold_murcko",
+    "seed": 145,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 491,
+      "pos": 270,
+      "neg": 221
+    },
+    "val": {
+      "n": 61,
+      "pos": 28,
+      "neg": 33
+    },
+    "test": {
+      "n": 62,
+      "pos": 31,
+      "neg": 31
+    }
+  },
+  {
+    "endpoint": "MRP",
+    "file": "scaffold5.csv",
+    "method": "scaffold_murcko",
+    "seed": 146,
+    "ratios": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "train": {
+      "n": 491,
+      "pos": 271,
+      "neg": 220
+    },
+    "val": {
+      "n": 61,
+      "pos": 31,
+      "neg": 30
+    },
+    "test": {
+      "n": 62,
+      "pos": 27,
+      "neg": 35
+    }
+  }
+]
