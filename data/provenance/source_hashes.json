@@ -1,0 +1,747 @@
+{
+  "description": "Original source sha256 and byte length for every copied item. Data CSV/NPZ bytes identical; original local-machine path strings in two JSON metadata items redacted with post-redaction checksum recorded.",
+  "source_archive": "BBB课题代码GitHub提交版本.rar",
+  "files": {
+    "data/reference/bbb_dataset.csv": {
+      "source": "data.csv",
+      "sha256": "0f183cc441a93eaa9ac898b685f3115bfafc73cbb1233d109794596fe7fa373b",
+      "bytes": 1130157
+    },
+    "data/splits/experts/bcrp/endpoint_subset.csv": {
+      "source": "数据划分/BCRP/endpoint_subset.csv",
+      "sha256": "07edae5963c71400911a8efb823e0db47681f6641ee563956cd9943ef8e9cea3",
+      "bytes": 54251
+    },
+    "data/splits/experts/bcrp/random1.csv": {
+      "source": "数据划分/BCRP/random1.csv",
+      "sha256": "5891cd42389ad8df207cdd87153ecdfe63b2a2bcc6d527c8070a6cb765e40eff",
+      "bytes": 57289
+    },
+    "data/splits/experts/bcrp/random2.csv": {
+      "source": "数据划分/BCRP/random2.csv",
+      "sha256": "6be540ab3759b299dd4ebc195029373fbe814d629989d054cbfab3ec178f2a34",
+      "bytes": 57289
+    },
+    "data/splits/experts/bcrp/random3.csv": {
+      "source": "数据划分/BCRP/random3.csv",
+      "sha256": "b801d2fd061700c166a471fc2287fc12882bb162ecc15336101850c39c3a69ee",
+      "bytes": 57289
+    },
+    "data/splits/experts/bcrp/random4.csv": {
+      "source": "数据划分/BCRP/random4.csv",
+      "sha256": "5fd8f29b99f41de9bb7b0d6504639800c43b165208280f6ca314ee593ef60c70",
+      "bytes": 57289
+    },
+    "data/splits/experts/bcrp/random5.csv": {
+      "source": "数据划分/BCRP/random5.csv",
+      "sha256": "76729bd9bb6bb0f71109b4feb6f2378eb2d0bdfafe2caf806dc2de84adc990e3",
+      "bytes": 57289
+    },
+    "data/splits/experts/bcrp/scaffold1.csv": {
+      "source": "数据划分/BCRP/scaffold1.csv",
+      "sha256": "a80ade3b9592e452d3b86f946d2f54ecc6eb5daf27e70be8b128a57b25b7c2e7",
+      "bytes": 57289
+    },
+    "data/splits/experts/bcrp/scaffold2.csv": {
+      "source": "数据划分/BCRP/scaffold2.csv",
+      "sha256": "6b77a538230256ff65441b3b20067b5c525314899b9f9ae748dd4440ae69c5ba",
+      "bytes": 57289
+    },
+    "data/splits/experts/bcrp/scaffold3.csv": {
+      "source": "数据划分/BCRP/scaffold3.csv",
+      "sha256": "73551570d571f705f9685dafa6ac601f9fceec16a036a3aca1ca8ecf82bb3eb5",
+      "bytes": 57289
+    },
+    "data/splits/experts/bcrp/scaffold4.csv": {
+      "source": "数据划分/BCRP/scaffold4.csv",
+      "sha256": "02262f7a80996566640ceb49c392b59a685dfa5a935c27a75da00aa57b050a37",
+      "bytes": 57289
+    },
+    "data/splits/experts/bcrp/scaffold5.csv": {
+      "source": "数据划分/BCRP/scaffold5.csv",
+      "sha256": "333dce79409bc26cb258791d977166768c975c1e3d2abd8fa0bca78b8de075a9",
+      "bytes": 57289
+    },
+    "data/splits/experts/bcrp/split_meta.json": {
+      "source": "数据划分/BCRP/split_meta.json",
+      "sha256": "d0fb52737718546965bdaff6555a011f0070b32b536c6f86b269af8a65eda908",
+      "bytes": 3997
+    },
+    "data/splits/experts/caco2/endpoint_subset.csv": {
+      "source": "数据划分/Caco-2/endpoint_subset.csv",
+      "sha256": "5b7ebe3896a1a601e60473e98bc08dfa13c73b68ed29e20f850470d652064336",
+      "bytes": 188391
+    },
+    "data/splits/experts/caco2/random1.csv": {
+      "source": "数据划分/Caco-2/random1.csv",
+      "sha256": "08fc10e00167aba4ab080cb3e6fb0fcaf8ce893101e80477b6d35cdcba01c495",
+      "bytes": 199550
+    },
+    "data/splits/experts/caco2/random2.csv": {
+      "source": "数据划分/Caco-2/random2.csv",
+      "sha256": "a96e3f96f596b26f77f3ffad3d2cab81e7c14e37b90cd2a204d87508abe4a5e9",
+      "bytes": 199550
+    },
+    "data/splits/experts/caco2/random3.csv": {
+      "source": "数据划分/Caco-2/random3.csv",
+      "sha256": "72adf34015dda04ed7a5c83768c5ebd171bc33bdfde392a0b591d1911c2d3324",
+      "bytes": 199550
+    },
+    "data/splits/experts/caco2/random4.csv": {
+      "source": "数据划分/Caco-2/random4.csv",
+      "sha256": "0c3c8d8597bb6f6ab825762f105a823e871d6795190cf1f3d6c848f93e47cbe9",
+      "bytes": 199550
+    },
+    "data/splits/experts/caco2/random5.csv": {
+      "source": "数据划分/Caco-2/random5.csv",
+      "sha256": "86641b3ecfd3a578d8d7ff13b2ce2cd8e934711d3330673ff4ae6050d1d42d26",
+      "bytes": 199550
+    },
+    "data/splits/experts/caco2/scaffold1.csv": {
+      "source": "数据划分/Caco-2/scaffold1.csv",
+      "sha256": "f25cecaf854e764c302e2a9573daf9a61720c6f22734016cdad3550aac80af70",
+      "bytes": 199550
+    },
+    "data/splits/experts/caco2/scaffold2.csv": {
+      "source": "数据划分/Caco-2/scaffold2.csv",
+      "sha256": "5d0b8c37dad5b1fca270321d49197e858c2d27baaa5601aefd6c8fb9081ba883",
+      "bytes": 199550
+    },
+    "data/splits/experts/caco2/scaffold3.csv": {
+      "source": "数据划分/Caco-2/scaffold3.csv",
+      "sha256": "42bbe5de3319c209c5300891abece5b56cbece1246318d3288a234a885c54691",
+      "bytes": 199550
+    },
+    "data/splits/experts/caco2/scaffold4.csv": {
+      "source": "数据划分/Caco-2/scaffold4.csv",
+      "sha256": "bc69e37baa7d50e8350785806172eb023517c44d56b209c4df26429135ef4a07",
+      "bytes": 199550
+    },
+    "data/splits/experts/caco2/scaffold5.csv": {
+      "source": "数据划分/Caco-2/scaffold5.csv",
+      "sha256": "e662912a1a5862025edc78a33ab2240adc7442f562cfe693d47548bbf3941b30",
+      "bytes": 199550
+    },
+    "data/splits/experts/caco2/split_meta.json": {
+      "source": "数据划分/Caco-2/split_meta.json",
+      "sha256": "3822d7aae96d79dc264b31dec51e4b7c9f8182274de168e44b63215688c1fd8f",
+      "bytes": 4097
+    },
+    "data/splits/experts/mdr1/audit_report.json": {
+      "source": "数据划分/MDR1/audit_report.json",
+      "sha256": "6a0cf3771cd7a89657375221e1f426d5603c972084adb814a8d384932e4efb46",
+      "bytes": 2235,
+      "normalized_sha256": "609c5e40f7260c996e5c36497d30b4970aa019059b0c3f3157f35477d7494567",
+      "normalized_bytes": 2159,
+      "note": "Only original absolute local-machine metadata path fields were redacted; no numerical or scientific fields altered."
+    },
+    "data/splits/experts/mdr1/audit_report.txt": {
+      "source": "数据划分/MDR1/audit_report.txt",
+      "sha256": "de73dc2140f868ef95d89db9b257c6dd7d84392011e0c0fffb52e3f0a45192fc",
+      "bytes": 190
+    },
+    "data/splits/experts/mdr1/endpoint_subset.csv": {
+      "source": "数据划分/MDR1/endpoint_subset.csv",
+      "sha256": "31ea774d45ebf013e74a8aee640866cf5ed94496088e2b029242a18f8ec46970",
+      "bytes": 78205
+    },
+    "data/splits/experts/mdr1/random1.csv": {
+      "source": "数据划分/MDR1/random1.csv",
+      "sha256": "7e08db96fe3b5117ec8d2e60c78ddf36c1ec04d453440edfb98ad9c155316b6b",
+      "bytes": 82767
+    },
+    "data/splits/experts/mdr1/random2.csv": {
+      "source": "数据划分/MDR1/random2.csv",
+      "sha256": "73936f2eb9c629d64d81baf83a795d6efc9752f7c9ea315e8b2da798309c7949",
+      "bytes": 82767
+    },
+    "data/splits/experts/mdr1/random3.csv": {
+      "source": "数据划分/MDR1/random3.csv",
+      "sha256": "a464d063b778999d523003b483d5d681de9f020ea0eb3d167fcbfd2280e37cc2",
+      "bytes": 82767
+    },
+    "data/splits/experts/mdr1/random4.csv": {
+      "source": "数据划分/MDR1/random4.csv",
+      "sha256": "97c30ba506463dd0a2963f310802a3b35a0fffd76a399a8003fa4c1808cfbfbc",
+      "bytes": 82767
+    },
+    "data/splits/experts/mdr1/random5.csv": {
+      "source": "数据划分/MDR1/random5.csv",
+      "sha256": "0f0d88fa16a8b6732f6ff3cd1f903d1b94a0b7c658e658be5cf309e98e990a16",
+      "bytes": 82767
+    },
+    "data/splits/experts/mdr1/scaffold1.csv": {
+      "source": "数据划分/MDR1/scaffold1.csv",
+      "sha256": "743b0c0a20d5d46d74128c78aad58521437bb94c583a2ed4bfafe13047435744",
+      "bytes": 82767
+    },
+    "data/splits/experts/mdr1/scaffold2.csv": {
+      "source": "数据划分/MDR1/scaffold2.csv",
+      "sha256": "06808ddbde2ed307bc7b03fc4dc8ed2150cb7511ed1b0078e34e103f6bc16b77",
+      "bytes": 82767
+    },
+    "data/splits/experts/mdr1/scaffold3.csv": {
+      "source": "数据划分/MDR1/scaffold3.csv",
+      "sha256": "6903dd85bdd28d3eb67a61c7fc1976a6f09c8b1abeab72e98dc6adf4743c68e0",
+      "bytes": 82767
+    },
+    "data/splits/experts/mdr1/scaffold4.csv": {
+      "source": "数据划分/MDR1/scaffold4.csv",
+      "sha256": "8be5b63d3fe7f4f62199adb5862466e7ea561e57f05321d8a6c442f9729077b7",
+      "bytes": 82767
+    },
+    "data/splits/experts/mdr1/scaffold5.csv": {
+      "source": "数据划分/MDR1/scaffold5.csv",
+      "sha256": "476e5ec5514dac319403fe27c79a18035bfdd7075b73f50c7c5197530e686eb7",
+      "bytes": 82767
+    },
+    "data/splits/experts/mdr1/split_meta.json": {
+      "source": "数据划分/MDR1/split_meta.json",
+      "sha256": "6947b38f23d4a23a5c942ec11fb4407ffa0fb9b86afc92ee9fa126f98616fce8",
+      "bytes": 5095
+    },
+    "data/splits/experts/mrp/endpoint_subset.csv": {
+      "source": "数据划分/MRP/endpoint_subset.csv",
+      "sha256": "7698fac7d36d363b16b7de44442d51bb871c19cfe26c1603bc98c5735f420fce",
+      "bytes": 41371
+    },
+    "data/splits/experts/mrp/random1.csv": {
+      "source": "数据划分/MRP/random1.csv",
+      "sha256": "9774de589b5d6ee5215666dd51a6f90026b5532523e5e278f9fd7cc36fd85f83",
+      "bytes": 43643
+    },
+    "data/splits/experts/mrp/random2.csv": {
+      "source": "数据划分/MRP/random2.csv",
+      "sha256": "fba0b5c4299fee00c19dcc40e23ab34cacb02eac59441cb5b0017b185b966706",
+      "bytes": 43643
+    },
+    "data/splits/experts/mrp/random3.csv": {
+      "source": "数据划分/MRP/random3.csv",
+      "sha256": "2d07461f01c6a658104dd0555ba0869483200c57f413f39af6f49fafbd9a60b1",
+      "bytes": 43643
+    },
+    "data/splits/experts/mrp/random4.csv": {
+      "source": "数据划分/MRP/random4.csv",
+      "sha256": "f4b589195774fb596f113f80031cbb175d66ed09ae0316e4043244c4b7e1755f",
+      "bytes": 43643
+    },
+    "data/splits/experts/mrp/random5.csv": {
+      "source": "数据划分/MRP/random5.csv",
+      "sha256": "b54c1d218cf2a1b1500ce108fab3ca650f1f960191e43a155a5a965c9ee6330b",
+      "bytes": 43643
+    },
+    "data/splits/experts/mrp/scaffold1.csv": {
+      "source": "数据划分/MRP/scaffold1.csv",
+      "sha256": "8f5a8101b4640e7f9370e80ccf06aaf359033386c52792e4cccedc8d59a7c826",
+      "bytes": 43643
+    },
+    "data/splits/experts/mrp/scaffold2.csv": {
+      "source": "数据划分/MRP/scaffold2.csv",
+      "sha256": "9c12073f4be0f1006d319052b65bd8bd4c5b98d5f39a70ccdd07f1a32d5b4e23",
+      "bytes": 43643
+    },
+    "data/splits/experts/mrp/scaffold3.csv": {
+      "source": "数据划分/MRP/scaffold3.csv",
+      "sha256": "6068ec27322ff7eca734cd1004583429e24d1e587721d9ca0dcbb0c106e0316b",
+      "bytes": 43643
+    },
+    "data/splits/experts/mrp/scaffold4.csv": {
+      "source": "数据划分/MRP/scaffold4.csv",
+      "sha256": "145bdd74208773b6cb9c043c711c83e367604b3a5e38d9bcfb4b2088e6715053",
+      "bytes": 43643
+    },
+    "data/splits/experts/mrp/scaffold5.csv": {
+      "source": "数据划分/MRP/scaffold5.csv",
+      "sha256": "d41b84294382ba69577d6355254472ebebb16b22d54e5d9bd2b658c8190e5354",
+      "bytes": 43643
+    },
+    "data/splits/experts/mrp/split_meta.json": {
+      "source": "数据划分/MRP/split_meta.json",
+      "sha256": "46f75a52fd701421a0e5e4f2967fe131f215e99edf414a44f98a3cc62ea81cb0",
+      "bytes": 3987
+    },
+    "data/splits/experts/pampa/endpoint_subset.csv": {
+      "source": "数据划分/PAMPA/endpoint_subset.csv",
+      "sha256": "3f21c2d58de8d5d72431ae842ddeb0ed4081f2f405c2ec72ab1e4942cb1ad627",
+      "bytes": 246778
+    },
+    "data/splits/experts/pampa/random1.csv": {
+      "source": "数据划分/PAMPA/random1.csv",
+      "sha256": "c9cfbda047c02d3ca614fcdfd915cd0eaaf4c3cc773bafe89a21ca047e8ad3a9",
+      "bytes": 263640
+    },
+    "data/splits/experts/pampa/random2.csv": {
+      "source": "数据划分/PAMPA/random2.csv",
+      "sha256": "0181fe4dd852cf9e391e839a7e573a0496fe2bf1d558a6f6a0fc6dbbe798426b",
+      "bytes": 263640
+    },
+    "data/splits/experts/pampa/random3.csv": {
+      "source": "数据划分/PAMPA/random3.csv",
+      "sha256": "845ffd75c31aad9ee3034ee43e4b864e91e54f69950e377d52e8252a951fd7f9",
+      "bytes": 263640
+    },
+    "data/splits/experts/pampa/random4.csv": {
+      "source": "数据划分/PAMPA/random4.csv",
+      "sha256": "66aef18a8428ac3b05fb7ed6943eef4cde7a564253ce9c583c3d1f9d4d430792",
+      "bytes": 263640
+    },
+    "data/splits/experts/pampa/random5.csv": {
+      "source": "数据划分/PAMPA/random5.csv",
+      "sha256": "ff36da55812507a0efe829a881c72d47fd2145362e91d756e938f0b82a0da228",
+      "bytes": 263640
+    },
+    "data/splits/experts/pampa/scaffold1.csv": {
+      "source": "数据划分/PAMPA/scaffold1.csv",
+      "sha256": "9639e681b00fe04ac14acb0c29c6da7813070c08f6a3d384f6a8178a44e27820",
+      "bytes": 263639
+    },
+    "data/splits/experts/pampa/scaffold2.csv": {
+      "source": "数据划分/PAMPA/scaffold2.csv",
+      "sha256": "9324bbc6f19f33f3d939982cc319eff8a212e8f2d6ac0e25fb4ad11e78182e77",
+      "bytes": 263639
+    },
+    "data/splits/experts/pampa/scaffold3.csv": {
+      "source": "数据划分/PAMPA/scaffold3.csv",
+      "sha256": "6fe42093cceca2f6bb0a383473f3a6082da9ec818e3e3fed034a740e9d42a0c8",
+      "bytes": 263639
+    },
+    "data/splits/experts/pampa/scaffold4.csv": {
+      "source": "数据划分/PAMPA/scaffold4.csv",
+      "sha256": "6e57fedbebadab34b0fd7fc219edae46accd951360897b341ae57eb7f6891210",
+      "bytes": 263639
+    },
+    "data/splits/experts/pampa/scaffold5.csv": {
+      "source": "数据划分/PAMPA/scaffold5.csv",
+      "sha256": "332a34719d317c54174f3f6d264f3ff7e650f8318c62dcccc08f13d7f98c0466",
+      "bytes": 263639
+    },
+    "data/splits/experts/pampa/split_meta.json": {
+      "source": "数据划分/PAMPA/split_meta.json",
+      "sha256": "5ed4af3aef011b781d470e823b8c98fc180492386908bf2720da73773f39ec25",
+      "bytes": 4097
+    },
+    "data/splits/bbb/BBB_labels_corrected.csv": {
+      "source": "划分结果_MDR1fixed_stratified/BBB_labels_corrected.csv",
+      "sha256": "6f67696316a3c132c3150c109edab5e92cf0525ef5532f43dcea94a2f4db3d03",
+      "bytes": 1249322
+    },
+    "data/splits/bbb/audit/MDR1_label_audit_summary.json": {
+      "source": "划分结果_MDR1fixed_stratified/MDR1_label_audit_summary.json",
+      "sha256": "e860c40ae41f850c94f7680c200dfa0cec5e7516a88b19173670a38f72897f9d",
+      "bytes": 482
+    },
+    "data/splits/bbb/audit/MDR1_label_correction_audit.csv": {
+      "source": "划分结果_MDR1fixed_stratified/MDR1_label_correction_audit.csv",
+      "sha256": "c2f3b76aa5d6b8fa38f8eeff884fee7012dc6168800a4a44c35af641795916d4",
+      "bytes": 43910
+    },
+    "data/splits/bbb/all_split_summary.csv": {
+      "source": "划分结果_MDR1fixed_stratified/all_split_summary.csv",
+      "sha256": "eb3ece15efcacaf0e7d9f3bb074eca678445f6ecf297ed731007cf8fde284eff",
+      "bytes": 1927
+    },
+    "data/splits/bbb/pairwise_test_overlap.csv": {
+      "source": "划分结果_MDR1fixed_stratified/pairwise_test_overlap.csv",
+      "sha256": "2130a6639a5d84fb3fae81f709e96b9dc109f83731f60879b501a5840b15eab3",
+      "bytes": 1914
+    },
+    "data/splits/bbb/scaffold_00/bbb_test.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold0/bbb_test.csv",
+      "sha256": "d3d18373e2755de4b2a8cb06a7197ff2a59b0ad431c62e4b3d24ddbc9c78160b",
+      "bytes": 126428
+    },
+    "data/splits/bbb/scaffold_00/bbb_train.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold0/bbb_train.csv",
+      "sha256": "2f0ae412aeaf50ff932b92d4d6e52f90bdf7d32f6b9c8d486b1c1d4136c08f95",
+      "bytes": 973666
+    },
+    "data/splits/bbb/scaffold_00/bbb_val.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold0/bbb_val.csv",
+      "sha256": "bec2890aa7927ab01f693f424edd43a67d97b55849bd36feae1144c66583c9d7",
+      "bytes": 138975
+    },
+    "data/splits/bbb/scaffold_00/split_meta.json": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold0/split_meta.json",
+      "sha256": "54881e64f62be830cdd9b9beaaabba3af013f0413c56be5af2305fef3e3d6e1d",
+      "bytes": 1335
+    },
+    "data/splits/bbb/scaffold_00/split_report.txt": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold0/split_report.txt",
+      "sha256": "7ffe396d7356ef80099200f65176a8dc74adf575f37a0c6f7469c691a5d2d914",
+      "bytes": 681
+    },
+    "data/splits/bbb/scaffold_01/bbb_test.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold1/bbb_test.csv",
+      "sha256": "3a7e80fc22816a8d5722bc235d06e21ee63f2381ae006ce2aa1c5c1194c2ef24",
+      "bytes": 127669
+    },
+    "data/splits/bbb/scaffold_01/bbb_train.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold1/bbb_train.csv",
+      "sha256": "a05370d2bed665b39fec23c4415dcdc8c119d0f399f82e6e55633665c83d6171",
+      "bytes": 981797
+    },
+    "data/splits/bbb/scaffold_01/bbb_val.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold1/bbb_val.csv",
+      "sha256": "bd70e52a1c31cec54ed63d6f24c5df7380bd5745ccec2395ab54912ad5ef825a",
+      "bytes": 128438
+    },
+    "data/splits/bbb/scaffold_01/split_meta.json": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold1/split_meta.json",
+      "sha256": "483af95783ab4930893f9a35624d08f7b18a42940d61931729080c05713c42ba",
+      "bytes": 1363
+    },
+    "data/splits/bbb/scaffold_01/split_report.txt": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold1/split_report.txt",
+      "sha256": "09fb62b709605b309e52f8f8bce08575ecdcef6de416a1e50ef8612d4973855b",
+      "bytes": 677
+    },
+    "data/splits/bbb/scaffold_02/bbb_test.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold2/bbb_test.csv",
+      "sha256": "7c6cff2dbb053e0b691be62c95cefcbf70e4a9c0c6dc6107e64b538f6e366160",
+      "bytes": 125275
+    },
+    "data/splits/bbb/scaffold_02/bbb_train.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold2/bbb_train.csv",
+      "sha256": "51294fa4100feae22de1fee06362dd78cde75d428cd371845a0cc7b5d6a4bcfc",
+      "bytes": 979160
+    },
+    "data/splits/bbb/scaffold_02/bbb_val.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold2/bbb_val.csv",
+      "sha256": "71bd43c9b482eafa0731b9bfd4878031c3e1865166d9d927336c90063b7834db",
+      "bytes": 133849
+    },
+    "data/splits/bbb/scaffold_02/split_meta.json": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold2/split_meta.json",
+      "sha256": "de1d8d0eec72b34d57bd5dcfa03dbefd158db7297e45ba64838874efdba503cc",
+      "bytes": 1367
+    },
+    "data/splits/bbb/scaffold_02/split_report.txt": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold2/split_report.txt",
+      "sha256": "b959a07c9bd1ea2cc3dc5dbcc539b85c73ee9a96473d1b51f0051a6470401acb",
+      "bytes": 681
+    },
+    "data/splits/bbb/scaffold_03/bbb_test.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold3/bbb_test.csv",
+      "sha256": "41c513da2e364d381f307676d56fcbbde426e245f550ab88e839aeb67bbae704",
+      "bytes": 136193
+    },
+    "data/splits/bbb/scaffold_03/bbb_train.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold3/bbb_train.csv",
+      "sha256": "7628b60fde51d781747ddfff44a520866f628aaaad4dbc6e51c5a38d68e88c03",
+      "bytes": 970514
+    },
+    "data/splits/bbb/scaffold_03/bbb_val.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold3/bbb_val.csv",
+      "sha256": "2f9955314f6bbf3577cd367b300dd638a9e8f0aba122288d4954bebab647d58c",
+      "bytes": 129849
+    },
+    "data/splits/bbb/scaffold_03/split_meta.json": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold3/split_meta.json",
+      "sha256": "faaa0301025d4eedcd21376ff215f1bc96c68711dd5bcd178481001d2e95722c",
+      "bytes": 1367
+    },
+    "data/splits/bbb/scaffold_03/split_report.txt": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold3/split_report.txt",
+      "sha256": "84322ba181331da493ce55db2b26f56f1aa5d83ffea6eb96ba4837ef34f28f28",
+      "bytes": 680
+    },
+    "data/splits/bbb/scaffold_04/bbb_test.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold4/bbb_test.csv",
+      "sha256": "b2fa849bbcecc50894353da37e84fa31f5e761995cd13edd2f04fd94f9dfcd11",
+      "bytes": 126566
+    },
+    "data/splits/bbb/scaffold_04/bbb_train.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold4/bbb_train.csv",
+      "sha256": "74a0f5eb841d24ca61a4ad24558531a8830f1b8b3a0993ed13c40fe3176e863d",
+      "bytes": 978766
+    },
+    "data/splits/bbb/scaffold_04/bbb_val.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold4/bbb_val.csv",
+      "sha256": "b11458fb9ac911a9db505fbe39dad82308132688ac9b60a873146d77287af502",
+      "bytes": 132399
+    },
+    "data/splits/bbb/scaffold_04/split_meta.json": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold4/split_meta.json",
+      "sha256": "dce1ab639552fba54a44f7d1b611e92657dc0e6264eb26aafe7dce29b87054d6",
+      "bytes": 1370
+    },
+    "data/splits/bbb/scaffold_04/split_report.txt": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold4/split_report.txt",
+      "sha256": "e93a0f514c936794deb4e61bb7b964d946bd0f3a6195235443b8e8197a4f6efa",
+      "bytes": 682
+    },
+    "data/splits/bbb/scaffold_05/bbb_test.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold5/bbb_test.csv",
+      "sha256": "890a81453420d58c2b771c410f91d322084b0865e0251f9ff934979f1531648b",
+      "bytes": 121315
+    },
+    "data/splits/bbb/scaffold_05/bbb_train.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold5/bbb_train.csv",
+      "sha256": "6df9804a5963f271aa50f67cded971a85b3c214a8709372d6c588f0621fd7634",
+      "bytes": 982319
+    },
+    "data/splits/bbb/scaffold_05/bbb_val.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold5/bbb_val.csv",
+      "sha256": "a1ddbdfa9f00e82efe3ee80a171dd04b302a9b0d896352254b4f2fee718e4f9e",
+      "bytes": 136185
+    },
+    "data/splits/bbb/scaffold_05/split_meta.json": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold5/split_meta.json",
+      "sha256": "241efa46fc4faf2c1296e484f1a76ca3919aff33eee2943dce048f1d70265508",
+      "bytes": 1371
+    },
+    "data/splits/bbb/scaffold_05/split_report.txt": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold5/split_report.txt",
+      "sha256": "987d1f11a4e0216416c5b3eb6c3d865bc3cd048b55cca7e42957509c2c4d19b2",
+      "bytes": 682
+    },
+    "data/splits/bbb/scaffold_06/bbb_test.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold6/bbb_test.csv",
+      "sha256": "c2c8edf335e0317d76e45c5cc093d052d1a25d4b7b81a8512341d178d2c81239",
+      "bytes": 132037
+    },
+    "data/splits/bbb/scaffold_06/bbb_train.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold6/bbb_train.csv",
+      "sha256": "ae62291ebfbaefaccd93e16351bd0ab43a603562884b37b5752e717ae8bf7551",
+      "bytes": 978445
+    },
+    "data/splits/bbb/scaffold_06/bbb_val.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold6/bbb_val.csv",
+      "sha256": "43a8374749bd4a131b5640dbc604f52ac7804b54d965273d0726fbf2a94aeba4",
+      "bytes": 127514
+    },
+    "data/splits/bbb/scaffold_06/split_meta.json": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold6/split_meta.json",
+      "sha256": "e2516416cf4e2f84c6fc591eef4d84f16b9648da7651073628b9742679fe618b",
+      "bytes": 1370
+    },
+    "data/splits/bbb/scaffold_06/split_report.txt": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold6/split_report.txt",
+      "sha256": "66ba70add02a55371aaf989c686197e72da00662954ba5b4e01ef2002cafafe9",
+      "bytes": 682
+    },
+    "data/splits/bbb/scaffold_07/bbb_test.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold7/bbb_test.csv",
+      "sha256": "b3c480a2b93ac63e0fdf937f1d6a5aef0a6f2dbae5da69df9e3101dae3dc12ee",
+      "bytes": 132527
+    },
+    "data/splits/bbb/scaffold_07/bbb_train.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold7/bbb_train.csv",
+      "sha256": "240da3745f5d990167d9159bac1d60f8cd6f092c6fe3a20343eb3d1c48797591",
+      "bytes": 979607
+    },
+    "data/splits/bbb/scaffold_07/bbb_val.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold7/bbb_val.csv",
+      "sha256": "b634833c705c15c031e716c488beae14123a427a3b45875f36e74c6e1b1b8a6f",
+      "bytes": 125922
+    },
+    "data/splits/bbb/scaffold_07/split_meta.json": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold7/split_meta.json",
+      "sha256": "4b084b3bf6179dcd9166c458a0ee672b2dcc54670f6643b844071374e7a42839",
+      "bytes": 1369
+    },
+    "data/splits/bbb/scaffold_07/split_report.txt": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold7/split_report.txt",
+      "sha256": "7b443c0618ac7424a231ee009a6080251f33db7aefd3989ba0135ccd820f474e",
+      "bytes": 682
+    },
+    "data/splits/bbb/scaffold_08/bbb_test.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold8/bbb_test.csv",
+      "sha256": "ae6fc2c53ef0b0c87e1f7a2c7c7b81ff9770875a93575b7e7492251684237633",
+      "bytes": 138322
+    },
+    "data/splits/bbb/scaffold_08/bbb_train.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold8/bbb_train.csv",
+      "sha256": "42c2ee4a03268dc9da34bc0a723a9f9529a48267dd151945831d73179d7a55c0",
+      "bytes": 973713
+    },
+    "data/splits/bbb/scaffold_08/bbb_val.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold8/bbb_val.csv",
+      "sha256": "4f51af8508cced15744367224edaf3a1afd877093205ada03527a0812ec97ad7",
+      "bytes": 127139
+    },
+    "data/splits/bbb/scaffold_08/split_meta.json": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold8/split_meta.json",
+      "sha256": "233607640d30ebef7afe8c242a386b6c7e6fc75f6b37d52cedfe665953afcede",
+      "bytes": 1370
+    },
+    "data/splits/bbb/scaffold_08/split_report.txt": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold8/split_report.txt",
+      "sha256": "683c0be9297d8384ca675b52c4eb958e56ebe3037d79d58a6d2bcbf78cdc0463",
+      "bytes": 681
+    },
+    "data/splits/bbb/scaffold_09/bbb_test.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold9/bbb_test.csv",
+      "sha256": "1a61758189278cac8252333f3055b2c9539bf0a154df18c2458798bde00abb64",
+      "bytes": 135479
+    },
+    "data/splits/bbb/scaffold_09/bbb_train.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold9/bbb_train.csv",
+      "sha256": "628a84b04fa6079e90adaefcde31fffefb748001ea975decfd7446f29fd76f18",
+      "bytes": 974667
+    },
+    "data/splits/bbb/scaffold_09/bbb_val.csv": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold9/bbb_val.csv",
+      "sha256": "cdb2f76f90e0fbd450840387972885fcf7ba5dbb0fdffeda7291f15627fd7d72",
+      "bytes": 127576
+    },
+    "data/splits/bbb/scaffold_09/split_meta.json": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold9/split_meta.json",
+      "sha256": "2e520292415fddc366de4dd984d81a8bd6f46f90ad4a51f0a24e447a5c42e889",
+      "bytes": 1363
+    },
+    "data/splits/bbb/scaffold_09/split_report.txt": {
+      "source": "划分结果_MDR1fixed_stratified/scaffold9/split_report.txt",
+      "sha256": "6e5a7782d2d0b035b030869b29d0f44e5d346518dfbab6d72b41d35b849833e8",
+      "bytes": 677
+    },
+    "data/splits/bbb/split_protocol.json": {
+      "source": "划分结果_MDR1fixed_stratified/split_protocol.json",
+      "sha256": "d0263ec07c4487b1a50c97ebc176116d69d412b9603b9c08706e29ef127f3f38",
+      "bytes": 1357,
+      "normalized_sha256": "6a771b11d183e8da98d5005a5fe7defbc171cf4c9b992c9dbdd809999a4905cd",
+      "normalized_bytes": 1271,
+      "note": "Only original absolute local-machine metadata path fields were redacted; no numerical or scientific fields altered."
+    },
+    "data/derived/expert_scores/bbb_tabpfn35_scores_full_data.csv": {
+      "source": "BBB_TabPFN35_scores_full_data.csv",
+      "sha256": "e13a2a52bd57a3ef2fb42baea1c67b16f60f7b2ad85a58935e563fb29745f2d9",
+      "bytes": 1212165
+    },
+    "data/derived/ablation/ablation_by_split.csv": {
+      "source": "ablation_by_split.csv",
+      "sha256": "876adf726b88c5fee787dc081ccd7dc3341d020dfbc15a3fb66fb0d9e1aa5942",
+      "bytes": 28728
+    },
+    "data/derived/ablation/ablation_design.csv": {
+      "source": "ME_BBB_V35_十组消融设计表.csv",
+      "sha256": "1769ee9138bb46e70d8c9eafdd67d88f1efd78e5dbb43a44be386145a74bfc00",
+      "bytes": 842
+    },
+    "data/derived/figure5/feature_attribution/individual_permutation_all_repeats.csv": {
+      "source": "individual_permutation_all_repeats.csv",
+      "sha256": "6f0dc1424dae323c5443fafd2fb733fa7600f80fef791860ae5d36aad9184d7e",
+      "bytes": 181205
+    },
+    "data/derived/figure6/case_data_v35.csv": {
+      "source": "Figure7_case_data_v35.csv",
+      "sha256": "b1d771e93b0bfadf7ff60ae0c68a206aac75bb79d3406d00e1a7ea30825f23f9",
+      "bytes": 832
+    },
+    "data/derived/figure5/feature_attribution/per_split/scaffold0_shap.npz": {
+      "source": "scaffold0_shap.npz",
+      "sha256": "0217221cb800a8d08aa85c3d079812953e434b649056d217e83607437683a99c",
+      "bytes": 2801241
+    },
+    "data/derived/figure5/feature_attribution/per_split/scaffold1_shap.npz": {
+      "source": "scaffold1_shap.npz",
+      "sha256": "324929ce33aaa36a3e5aa5fc138a1c1bdf5662c2255580c0757b63407a36ff69",
+      "bytes": 2865405
+    },
+    "data/derived/figure5/feature_attribution/per_split/scaffold2_shap.npz": {
+      "source": "scaffold2_shap.npz",
+      "sha256": "a0e5ee4c7d9d65a05fab3628bc944413fb337c2efaa1cc323e4d601f624a808c",
+      "bytes": 2547502
+    },
+    "data/derived/figure5/feature_attribution/per_split/scaffold3_shap.npz": {
+      "source": "scaffold3_shap.npz",
+      "sha256": "8abd5580135e67eac7bc0e68cc1ab95de22eb805bea547027d9de50151f5a730",
+      "bytes": 2669219
+    },
+    "data/derived/figure5/feature_attribution/per_split/scaffold4_shap.npz": {
+      "source": "scaffold4_shap.npz",
+      "sha256": "00df582473ff1c084498271568baaac35833a4afa8520997bf17a90aa89b883c",
+      "bytes": 2718841
+    },
+    "data/derived/figure5/feature_attribution/per_split/scaffold5_shap.npz": {
+      "source": "scaffold5_shap.npz",
+      "sha256": "58ed1c23a8190aab0b0cac682fdb68bb11e1c7d7c10536cd902028944b8e910f",
+      "bytes": 2833200
+    },
+    "data/derived/figure5/feature_attribution/per_split/scaffold6_shap.npz": {
+      "source": "scaffold6_shap.npz",
+      "sha256": "66144a926dff1eb92f5049142a0f601c023d495a30b9d3d558ef6f148ad53f22",
+      "bytes": 2822874
+    },
+    "data/derived/figure5/feature_attribution/per_split/scaffold7_shap.npz": {
+      "source": "scaffold7_shap.npz",
+      "sha256": "1f499a8622986969743c860e600f48921f203b7df0a0ff248b709c15a32a40be",
+      "bytes": 2588474
+    },
+    "data/derived/figure5/feature_attribution/per_split/scaffold8_shap.npz": {
+      "source": "scaffold8_shap.npz",
+      "sha256": "7030956258c55d419918f29116ecb6234db240ec7f64ebc32b7ca49f0a477783",
+      "bytes": 2648586
+    },
+    "data/derived/figure5/feature_attribution/per_split/scaffold9_shap.npz": {
+      "source": "scaffold9_shap.npz",
+      "sha256": "9d5eabe71c395e6dcb1b64ffa023e79e4e1b90364fe8b7f292e76fd77427f056",
+      "bytes": 2733728
+    },
+    "scripts/train_experts/tune_tabpfn_experts.py": {
+      "source": "训练专家TabPFN_V3_5_GPU_RDKit2D_new.py",
+      "sha256": "4a1e7b1647d010aa8df6d2dcbf6ddfef141b8b816dce77c42f64ec7abcdb8db3",
+      "bytes": 18000
+    },
+    "scripts/train_experts/train_full_tabpfn_experts.py": {
+      "source": "train_tabpfn_v35_full_experts.py",
+      "sha256": "5d3ebe901b1e1c68250fcaea1a525e8dc671493d902a66a9db945fb54708f6ba",
+      "bytes": 18739
+    },
+    "scripts/train_experts/tune_classical_experts.py": {
+      "source": "train_mechanistic_experts_scaffold_AUROC_B_only.py",
+      "sha256": "4e5a3237a1a5172779823747efe8123fe42d93456d588fe1d343f566b3323717",
+      "bytes": 23923
+    },
+    "scripts/train_experts/evaluate_selected_experts.py": {
+      "source": "evaluate_selected_experts_scaffold_test_exploratory.py",
+      "sha256": "0500f678268876ca17dc65c7cfc30b9c869b05e7ed272839fce3241459898f03",
+      "bytes": 9128
+    },
+    "scripts/train_bbb/tune_and_train_bbb.py": {
+      "source": "train_BBB_ML_scaffold_AUROC_B_only_V35.py",
+      "sha256": "7241e0fbb15fc214219e4d9b90ee5bc871ecb6b974969aa77824f21134b91080",
+      "bytes": 25931
+    },
+    "scripts/analyses/ablation/run_ablation.py": {
+      "source": "ME_BBB_ExtraTrees_ECFP4_V35_10组消融.py",
+      "sha256": "e7f8e28401bbddf43893a4f6b587697394ada4b95999c7c59e067d422bd7530b",
+      "bytes": 23263
+    },
+    "scripts/figures/figure2/figure2_base.py": {
+      "source": "ME_BBB_Figure2_redraw.py",
+      "sha256": "a73e90ae554eb9bcccfce6a3193e19982e8cd93b058831f6ddde639ded1304ea",
+      "bytes": 21702
+    },
+    "scripts/figures/figure2/plot_figure2.py": {
+      "source": "ME_BBB_Figure2_nature_style_V6.py",
+      "sha256": "3b30fb9fb8054f23321ac9d0a14ec9c2482614c31aeb0dcc563d684db5e58965",
+      "bytes": 24011
+    },
+    "scripts/figures/figure3/plot_figure3.py": {
+      "source": "figure3_TabPFN_V35_teal_coral_compatible.py",
+      "sha256": "56068dbbddbb77c56cd02ab4712aca06e8e0b71b66519dcfc007a2bbe4b845f1",
+      "bytes": 31722
+    },
+    "scripts/figures/figure4/plot_figure4.py": {
+      "source": "plot_Figure4_V35_publication.py",
+      "sha256": "89c646878a758ce7dedad4399b958b32901f35033efddf9448a55f9dcf5c15d4",
+      "bytes": 9177
+    },
+    "scripts/figures/figure5/compute_feature_attributions.py": {
+      "source": "ME_BBB_ExtraTrees_V39_3_AuditedTreeRepair_Figure6.py",
+      "sha256": "ababb751fd4049e8c12244fbe7dd3e18234dc3d0b1dc7e57c70f27475920f77a",
+      "bytes": 41163
+    },
+    "scripts/figures/figure5/plot_figure5.py": {
+      "source": "plot_Figure6_V39_replot_only.py",
+      "sha256": "edd499926652c1a832cd24ab56301676719a11d3cceee1458416406ccfcc9d27",
+      "bytes": 15193
+    },
+    "scripts/figures/figure6/plot_case_studies.py": {
+      "source": "plot_Figure7_V35_7to8.py",
+      "sha256": "8fdba40446ce68e2d162ef2dc58b0fcd83dad1bb9a5f1a8745a9b2dd57f3820c",
+      "bytes": 9878
+    }
+  }
+}

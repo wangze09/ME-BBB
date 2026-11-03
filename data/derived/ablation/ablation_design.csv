@@ -1,0 +1,11 @@
+﻿ablation,ecfp4,included_experts,excluded_experts,n_experts,n_features,description
+full,1,"BCRP,Caco-2,MDR1,MRP,PAMPA",NONE,5,2053,ECFP4 plus all five expert scores
+ecfp_only,1,NONE,"BCRP,Caco-2,MDR1,MRP,PAMPA",0,2048,Structural fingerprint only
+experts_only,0,"BCRP,Caco-2,MDR1,MRP,PAMPA",NONE,5,5,Five expert scores only
+ecfp_efflux,1,"BCRP,MDR1,MRP","Caco-2,PAMPA",3,2051,ECFP4 plus efflux-associated BCRP/MDR1/MRP
+ecfp_permeability,1,"Caco-2,PAMPA","BCRP,MDR1,MRP",2,2050,ECFP4 plus permeability-related Caco-2/PAMPA
+drop_BCRP,1,"Caco-2,MDR1,MRP,PAMPA",BCRP,4,2052,Leave BCRP out
+drop_Caco-2,1,"BCRP,MDR1,MRP,PAMPA",Caco-2,4,2052,Leave Caco-2 out
+drop_MDR1,1,"BCRP,Caco-2,MRP,PAMPA",MDR1,4,2052,Leave MDR1 out
+drop_MRP,1,"BCRP,Caco-2,MDR1,PAMPA",MRP,4,2052,Leave MRP out
+drop_PAMPA,1,"BCRP,Caco-2,MDR1,MRP",PAMPA,4,2052,Leave PAMPA out
