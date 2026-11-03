@@ -6,7 +6,7 @@
 4. **BBB model:** concatenate the ECFP4 (radius 2, 2,048 bits, `includeChirality=False`) fingerprint with five expert probabilities (2,053 features in total), then tune/train an ExtraTrees classifier across ten predefined scaffold partitions.
 5. **Ablation and manuscript figures:** run the fixed ablation and plotting scripts using the expected CSV and cache schemas.
 
-Scripts are kept close to the archived research implementation. Scaffold split generation and raw data curation are not included in this source-only release. The individual script `--help` options are authoritative for their supported inputs and outputs.
+Scripts are kept close to the archived research implementation. Scaffold split generation and raw data curation scripts are not provided; the predefined scaffold CSV partitions and selected source/derived data are published under `data/`. The individual script `--help` options are authoritative for their supported inputs and outputs.
 
 ## Script entrances
 
@@ -24,4 +24,4 @@ scripts/figures/figure5/plot_figure5.py
 scripts/figures/figure6/plot_case_studies.py
 ```
 
-No raw labels, prediction cache files, trained weights or scientific result tables are distributed in this code-only repository. Output directories are automatically created under `outputs/` and are gitignored.
+The published repository includes reference labels, scaffold splits, expert scores, ablation results, and selected attribution caches under `data/`. Trained model weights and upstream TabPFN checkpoints are not included; see `models/README.md`. Output directories are created under `outputs/` and are gitignored.
