@@ -6,7 +6,7 @@ ME-BBB integrates an ECFP4/Morgan radius-2 fingerprint (2,048 bits) with five tr
 
 ## Contents
 
-This is a **source-code release**. It contains Python scripts for mechanistic-expert training, baseline comparison, BBB model fitting, feature ablation, and manuscript Figures 2–6, plus configuration and basic smoke tests. Molecular datasets, per-split files, generated expert scores, model checkpoints, fitted models, SHAP caches, and manuscript figure outputs are **not included**. The scripts are therefore **not runnable end-to-end out of the box**; users must supply appropriately licensed input data, models and dependencies. No claim of independent reproduction of the manuscript's numerical results is made by this code-only release.
+This is a **code-and-data release**. It contains published molecular datasets, predefined scaffold partitions, derived expert scores, ablation tables and SHAP attribution caches, as well as Python scripts for mechanistic-expert training, baseline comparison, BBB model fitting, feature ablation, and manuscript Figures 2–6, plus configuration and basic smoke tests. The public data files are available in [`data/`](data/README.md), including all ten BBB train/validation/test partitions and all five expert scaffold collections. **Pretrained TabPFN checkpoints, fitted model weights, and manuscript figure outputs are not bundled**; model-weight distribution on Zenodo is pending. Reproducing model fitting still requires compatible dependencies and externally obtained authorized weights. Source and cached data availability alone does not establish full numerical reproducibility.
 
 ## Repository map
 
