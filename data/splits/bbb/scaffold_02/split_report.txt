@@ -1,0 +1,11 @@
+=== scaffold2: corrected MDR1 + stratified ACHIRAL Murcko ===
+MDR1 labels corrected from 1233-row authoritative endpoint_subset.csv
+Cold-start eligible positive rate: 0.642127
+Train: {'n': 6167, 'pos': 3902, 'neg': 2265, 'positive_rate': 0.632723}
+Val: {'n': 780, 'pos': 500, 'neg': 280, 'positive_rate': 0.641026}
+Test: {'n': 780, 'pos': 500, 'neg': 280, 'positive_rate': 0.641026}
+Dropped labeled scaffold siblings: {'n': 72, 'pos': 51, 'neg': 21, 'positive_rate': 0.708333}
+Overlaps (all must be 0): {'train_val': 0, 'train_test': 0, 'val_test': 0}
+Best trial=5 of 32, feasible trials=32
+Max heldout scaffold-group size=257
+IMPORTANT: Repeated splits are not independent folds.

@@ -1,0 +1,61 @@
+{
+  "seed": 5,
+  "selection": "randomized scaffold-group greedy with heldout class balance",
+  "scaffold_definition": "MurckoScaffoldSmiles(includeChirality=False)",
+  "coldstart": "holdout has none of 5 experimental endpoint labels; labeled scaffold siblings excluded",
+  "target_size": {
+    "val": 780,
+    "test": 780
+  },
+  "eligible_positive_rate": 0.6421270718232044,
+  "actual": {
+    "train": {
+      "n": 6178,
+      "pos": 3923,
+      "neg": 2255,
+      "positive_rate": 0.634995
+    },
+    "val": {
+      "n": 780,
+      "pos": 500,
+      "neg": 280,
+      "positive_rate": 0.641026
+    },
+    "test": {
+      "n": 780,
+      "pos": 494,
+      "neg": 286,
+      "positive_rate": 0.633333
+    },
+    "dropped": {
+      "n": 61,
+      "pos": 36,
+      "neg": 25,
+      "positive_rate": 0.590164
+    }
+  },
+  "achiral_scaffold_overlaps": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "heldout_scaffold_group_counts": {
+    "val": 42,
+    "test": 133
+  },
+  "allocation_search": {
+    "val_n": 780,
+    "test_n": 780,
+    "val_pos": 500,
+    "test_pos": 494,
+    "val_rate": 0.6410256410256411,
+    "test_rate": 0.6333333333333333,
+    "dropped_labeled": 61,
+    "loss": 0.021625938518203623,
+    "trial": 25,
+    "locked_large_group_count": 3,
+    "max_heldout_group_n": 257,
+    "passing_trials": 31,
+    "test_group_reuse_count": 16
+  }
+}
