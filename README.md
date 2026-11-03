@@ -20,8 +20,6 @@ This is a **source-code release**. It contains Python scripts for mechanistic-ex
 | Feature ablation | `scripts/analyses/ablation/run_ablation.py` |
 | Manuscript Figures 2–6 | `scripts/figures/figure2/` through `scripts/figures/figure6/` |
 
-The current figure mapping follows the revised manuscript numbering: feature attribution is Figure 5 and case studies are Figure 6.
-
 ## Environment
 
 The supplied GPU-machine metadata (November 3, 2026) is:
