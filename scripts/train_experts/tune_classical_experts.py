@@ -271,7 +271,7 @@ def grid_keys(reps, models):
 
 def run_search(args, endpoint: str, split: str, all_data: pd.DataFrame) -> None:
     dst = args.save_dir / "grid_by_split" / f"{endpoint}__{split}.csv"
-    merged = read_groups(args.split_root / endpoint.lower(), split, all_data)
+    merged = read_groups(args.split_root / endpoint, split, all_data)
     audit = scaffold_audit(merged, endpoint, split)
     tr = merged.loc[merged.GROUP == "train"]
     va = merged.loc[merged.GROUP == "val"]
@@ -392,7 +392,7 @@ def select_and_train_final(args, endpoint: str, all_data: pd.DataFrame):
         old = json.loads(final_config_file.read_text(encoding="utf-8"))
         if (old.get("representation") == rep and old.get("model") == family
                 and old.get("hyperparameters") == params
-                and old.get("full_data_sha256") == sha256_file(args.split_root / endpoint.lower() / "endpoint_subset.csv")):
+                and old.get("full_data_sha256") == sha256_file(args.split_root / endpoint / "endpoint_subset.csv")):
             LOG.info("FINAL SKIP %s: matching final model already exists", endpoint)
             return True
         raise RuntimeError(f"{endpoint}: saved model configuration/data changed; use --force_final")
@@ -427,7 +427,7 @@ def select_and_train_final(args, endpoint: str, all_data: pd.DataFrame):
         "sd_validation_auc": float(best["sd_validation_auc"]),
         "seed": SEED, "n_full_training_samples": int(len(all_data)),
         "model_file": str(final_model_file),
-        "full_data_sha256": sha256_file(args.split_root / endpoint.lower() / "endpoint_subset.csv"),
+        "full_data_sha256": sha256_file(args.split_root / endpoint / "endpoint_subset.csv"),
         "heldout_test_metrics": None,
         "note": "Test sets NOT evaluated; final model fitted on all endpoint labels after validation selection.",
     }, final_config_file)
