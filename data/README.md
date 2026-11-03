@@ -37,7 +37,7 @@ data/
     └── source_hashes.json
 ```
 
-**Current completeness (checked November 3, 2026, `main`):** all five expert endpoint datasets and their five scaffold assignment files are present; all ten BBB scaffold directories have validation/test CSVs and split metadata. All ten BBB scaffold directories now include train, validation, test, and metadata files. The three training CSVs for scaffold_07, scaffold_08, and scaffold_09 were subsequently uploaded. The BBB root-level source/audit files (including `BBB_labels_corrected.csv` and `split_protocol.json`) are not published; their absence does not affect loading the released precomputed partitions, but workflows explicitly requiring those original files must use separately supplied inputs.
+**Current completeness (checked November 3, 2026, `main`):** all five expert endpoint datasets and their five scaffold assignment files are present; all ten BBB scaffold directories include train, validation, test, and metadata files. The three training CSVs for scaffold_07, scaffold_08, and scaffold_09 were subsequently uploaded. The BBB root-level source/audit files (including `BBB_labels_corrected.csv` and `split_protocol.json`) are not published; their absence does not affect loading the released precomputed partitions, but workflows explicitly requiring those original files must use separately supplied inputs.
 
 ## File schemas and interpretation
 
