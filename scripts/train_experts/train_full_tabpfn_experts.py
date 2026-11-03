@@ -214,7 +214,7 @@ def maybe_empty_cuda():
 def fit_one_endpoint(args, endpoint: str, featurizer: RDKit2DFeaturizer,
                      ckpt: Path | None, tabpfn_version: str,
                      predict_features: np.ndarray | None) -> tuple[dict, np.ndarray | None]:
-    data_path = args.split_root / endpoint.lower() / "endpoint_subset.csv"
+    data_path = args.split_root / endpoint / "endpoint_subset.csv"
     df = load_endpoint_csv(data_path)
     sha = sha256(data_path)
     out_models = args.save_dir / "full_models"
