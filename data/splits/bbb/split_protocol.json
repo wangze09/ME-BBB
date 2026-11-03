@@ -1,0 +1,36 @@
+{
+  "input": "<original-local-path-redacted>/score.csv",
+  "input_sha256": "9001b86e401581685d59877f9d3560b575a41bc8a47fe0f44a01c2a890529826",
+  "mdr1_subset": "<original-local-path-redacted>/endpoint_subset.csv",
+  "mdr1_subset_sha256": "31ea774d45ebf013e74a8aee640866cf5ed94496088e2b029242a18f8ec46970",
+  "reference_data": null,
+  "scores_csv": "<original-local-path-redacted>/BBB_TabPFN35_scores_full_data.csv",
+  "scores_sha256": "e13a2a52bd57a3ef2fb42baea1c67b16f60f7b2ad85a58935e563fb29745f2d9",
+  "rdkit_version": "2025.09.3",
+  "scaffold": "MurckoScaffoldSmiles(mol=mol,includeChirality=False)",
+  "experimental_MDR1_labels": "authoritative provided 1233-row endpoint_subset.csv",
+  "coldstart": "Val/Test from five-experimental-label-missing BBB pool ONLY",
+  "validation_and_test_target_fraction_of_total": [
+    0.1,
+    0.1
+  ],
+  "balancing_target": "corrected cold-start eligible BBB positive proportion",
+  "max_holdout_scaffold_group_frac": 0.33,
+  "positive_rate_abs_tolerance": 0.05,
+  "randomized_search_trials_per_seed": 32,
+  "test_scaffold_reuse_penalty": 0.05,
+  "seed_list": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "legacy_prediction_columns_dropped": true,
+  "repeated_splits_not_independent_folds": true
+}
