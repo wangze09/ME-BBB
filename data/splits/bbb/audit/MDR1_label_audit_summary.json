@@ -1,0 +1,14 @@
+{
+  "bbb_rows": 7799,
+  "authoritative_MDR1_raw_rows": 1233,
+  "authoritative_MDR1_unique_canonical_molecules": 1231,
+  "old_BBB_MDR1_nonmissing": 417,
+  "old_MDR1_nonmatching_by_raw_SMILES": 289,
+  "old_MDR1_removed_after_canonical_match": 288,
+  "MDR1_restored_to_BBB_by_canonical_match": 0,
+  "MDR1_conflicting_value_corrected": 0,
+  "new_BBB_MDR1_nonmissing": 129,
+  "old_isolated_count": 7088,
+  "corrected_isolated_count": 7240,
+  "BBB_positive_fraction": 0.6350814206949609
+}
