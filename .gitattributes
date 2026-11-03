@@ -1,0 +1,16 @@
+# Preserve exact scientific input bytes on Windows and Linux.
+# In particular, checkout must never rewrite CSV newlines and break SHA-256.
+*.csv -text
+*.npz binary
+*.json -text
+
+# Source and documentation use deterministic UTF-8 LF line endings.
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.txt text eol=lf
+*.example text eol=lf
+
+# Preserve the original CRLF bytes of this archived audit text.
+data/splits/experts/mdr1/audit_report.txt -text

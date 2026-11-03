@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "release": "staging-not-published",
+  "models": [
+    {
+      "id": "tabpfn_3_5_upstream",
+      "status": "external_dependency",
+      "framework": "TabPFN",
+      "file": "tabpfn-v3.5-20260909.safetensors",
+      "sources": [
+        "https://huggingface.co/Prior-Labs/tabpfn_3_5"
+      ],
+      "sha256": null,
+      "size_bytes": null,
+      "license": "tabpfn-3-5-license-v1.0"
+    },
+    {
+      "id": "expert_bcrp",
+      "status": "pending",
+      "framework": "TabPFN 3.5 / RDKit2DNormalized",
+      "file": null,
+      "sources": [],
+      "sha256": null,
+      "size_bytes": null,
+      "license": "tabpfn-3-5-license-v1.0"
+    },
+    {
+      "id": "expert_caco2",
+      "status": "pending",
+      "framework": "TabPFN 3.5 / RDKit2DNormalized",
+      "file": null,
+      "sources": [],
+      "sha256": null,
+      "size_bytes": null,
+      "license": "tabpfn-3-5-license-v1.0"
+    },
+    {
+      "id": "expert_mdr1",
+      "status": "pending",
+      "framework": "TabPFN 3.5 / RDKit2DNormalized",
+      "file": null,
+      "sources": [],
+      "sha256": null,
+      "size_bytes": null,
+      "license": "tabpfn-3-5-license-v1.0"
+    },
+    {
+      "id": "expert_mrp",
+      "status": "pending",
+      "framework": "TabPFN 3.5 / RDKit2DNormalized",
+      "file": null,
+      "sources": [],
+      "sha256": null,
+      "size_bytes": null,
+      "license": "tabpfn-3-5-license-v1.0"
+    },
+    {
+      "id": "expert_pampa",
+      "status": "pending",
+      "framework": "TabPFN 3.5 / RDKit2DNormalized",
+      "file": null,
+      "sources": [],
+      "sha256": null,
+      "size_bytes": null,
+      "license": "tabpfn-3-5-license-v1.0"
+    },
+    {
+      "id": "bbb_extratrees_v35",
+      "status": "pending",
+      "framework": "ExtraTrees / ECFP4 + five expert scores",
+      "file": null,
+      "sources": [],
+      "sha256": null,
+      "size_bytes": null,
+      "license": "see THIRD_PARTY_NOTICES.md"
+    }
+  ]
+}

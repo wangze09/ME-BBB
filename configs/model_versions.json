@@ -1,0 +1,26 @@
+{
+  "expert_model_family": "TabPFN 3.5",
+  "checkpoint": "tabpfn-v3.5-20260909.safetensors",
+  "expert_representation": "RDKit2DNormalized",
+  "bbb_algorithm": "ExtraTrees",
+  "bbb_fingerprint": "ECFP4 Morgan radius 2, 2048 bits, includeChirality=False",
+  "bbb_fixed_estimator": {
+    "n_estimators": 500,
+    "min_samples_leaf": 3,
+    "max_features": "sqrt",
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "scaffold_splits": 10,
+  "expert_scaffold_splits": 5,
+  "note": "Recorded configuration/host environment only, not evidence of model or original training dependency lock.",
+  "reported_compute_environment": {
+    "observation_date": "2026-11-03",
+    "python": "3.11.17",
+    "torch": "2.7.1+cu118",
+    "torch_cuda_build": "11.8",
+    "nvidia_driver": "580.95.05",
+    "nvidia_smi_cuda_max": "13.0",
+    "gpu": "2 x Tesla T4 (15360 MiB per GPU)"
+  }
+}

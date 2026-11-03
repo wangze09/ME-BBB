@@ -1,0 +1,12 @@
+TABPFN-3.5 Model and Fitted Expert Notice
+
+The TABPFN-3.5 Model is licensed by Prior Labs GmbH under the TABPFN-3.5 Non-Commercial License.
+Copyright © Prior Labs GmbH 2026.
+THE SERVICES ARE PROVIDED FREE OF CHARGE: COMPANY SHALL NOT BE LIABLE FOR DAMAGES RESULTING FROM SLIGHT NEGLIGENCE. LIABILITY FOR GROSS NEGLIGENCE AND INTENTIONAL MISCONDUCT REMAINS UNAFFECTED.
+
+The ME-BBB fitted mechanistic experts (when distributed) are modified derivatives or adapted usages of the TABPFN-3.5 Model, not an official product of Prior Labs, and are not endorsed, approved or validated by Prior Labs.
+Use of the model, derivatives and Outputs is restricted to non-commercial, non-production academic/research purposes under the upstream license, including the upstream disclaimer of warranties and limitations of liability.
+Recipient rights to the upstream model and derivatives arise directly under the Prior Labs license, not under this repository's MIT license.
+
+Official license: https://huggingface.co/Prior-Labs/tabpfn_3_5/raw/main/LICENSE
+The complete unmodified upstream license text has NOT been bundled because direct raw-file downloading could not be verified in this build environment. Fetch and attach the exact upstream file before distributing any model or derivative.

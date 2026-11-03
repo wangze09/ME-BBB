@@ -1,0 +1,2 @@
+-r figures.txt
+pytest
