@@ -90,13 +90,13 @@ def run_one_endpoint(args, endpoint: str):
     rep = cfg['representation']
     family = cfg['model']
     params = cfg['hyperparameters']
-    all_data = read_labeled(args.split_root / endpoint.lower())
-    data_hash = sha256_file(args.split_root / endpoint.lower() / 'endpoint_subset.csv')
+    all_data = read_labeled(args.split_root / endpoint)
+    data_hash = sha256_file(args.split_root / endpoint / 'endpoint_subset.csv')
     if cfg.get('full_data_sha256') and cfg['full_data_sha256'] != data_hash:
         raise ValueError(f'{endpoint}: endpoint_subset.csv differs from data used during selection')
     detail = []
     for split in SPLITS:
-        merged = read_groups(args.split_root / endpoint.lower(), split, all_data)
+        merged = read_groups(args.split_root / endpoint, split, all_data)
         # Audit uses existing file unchanged; does not block on Test overlap,
         # but blocks on Train/Validation overlap per the B-only protocol.
         audit = scaffold_audit(merged, endpoint, split)
