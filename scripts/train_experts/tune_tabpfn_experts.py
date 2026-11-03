@@ -350,7 +350,7 @@ def main():
     for rep in args.reps:
         log(f"\n===== Representation: {rep.upper()} =====")
         for endpoint in args.endpoints:
-            ep_dir = os.path.join(args.split_root, endpoint.lower())
+            ep_dir = os.path.join(args.split_root, endpoint)
             subset_path = os.path.join(ep_dir, "endpoint_subset.csv")
             if not os.path.isfile(subset_path):
                 log(f"[WARN] skip missing endpoint: {subset_path}")
