@@ -37,7 +37,7 @@ data/
     └── source_hashes.json
 ```
 
-**Current completeness (checked November 3, 2026, `main`):** all five expert endpoint datasets and their five scaffold assignment files are present; all ten BBB scaffold directories have validation/test CSVs and split metadata. However, `splits/bbb/scaffold_07/bbb_train.csv`, `scaffold_08/bbb_train.csv`, and `scaffold_09/bbb_train.csv` are **not currently present**. As a result, the complete ten-partition BBB training/ablation workflow cannot yet run from a fresh clone. The BBB root-level source/audit files (including `BBB_labels_corrected.csv` and `split_protocol.json`) are not presently included either. These are inventory observations, not claims that data were absent from the original experiments.
+**Current completeness (checked November 3, 2026, `main`):** all five expert endpoint datasets and their five scaffold assignment files are present; all ten BBB scaffold directories have validation/test CSVs and split metadata. All ten BBB scaffold directories now include train, validation, test, and metadata files. The three training CSVs for scaffold_07, scaffold_08, and scaffold_09 were subsequently uploaded. The BBB root-level source/audit files (including `BBB_labels_corrected.csv` and `split_protocol.json`) are not published; their absence does not affect loading the released precomputed partitions, but workflows explicitly requiring those original files must use separately supplied inputs.
 
 ## File schemas and interpretation
 
@@ -59,9 +59,9 @@ The `scaffold_XX` BBB directories and `scaffold1`–`scaffold5` endpoint files d
 
 ## Important path compatibility note
 
-The expert directories currently published on GitHub use their original case-sensitive names: **`BCRP`, `Caco-2`, `MDR1`, `MRP`, `PAMPA`**. Several training scripts instead look up `endpoint.lower()` (for example, `data/splits/experts/bcrp`). On case-sensitive Linux, these defaults **do not resolve** without an explicit directory-name mapping or a suitably normalized local copy. This is a known code-path issue and is **not** resolved by the data README. Do not silently rename input directories or modify scientific CSV contents.
+The expert directories currently published on GitHub use their original case-sensitive names: **`BCRP`, `Caco-2`, `MDR1`, `MRP`, `PAMPA`**. Earlier versions of several training scripts looked up lowercase endpoint names; this has been corrected. The four expert training/evaluation scripts now use the published endpoint directory names verbatim, so the default paths resolve on case-sensitive Linux. Do not rename input directories or modify scientific CSV contents.
 
-For BBB training, the script translates a logical split label such as `scaffold7` into `splits/bbb/scaffold_07`. The missing `bbb_train.csv` files listed above must be supplied before all ten runs can finish.
+For BBB training, the script translates a logical split label such as `scaffold7` into `splits/bbb/scaffold_07`. All ten partition directories now contain the three required BBB CSV files. Model-weight availability, dependencies, input schemas and expert-score provenance still determine whether end-to-end training succeeds.
 
 ## Provenance and usage
 
