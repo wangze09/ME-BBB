@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release": "staging-not-published",
+  "release": "zenodo-doi-linked-file-metadata-unverified",
   "models": [
     {
       "id": "tabpfn_3_5_upstream",
@@ -74,5 +74,12 @@
       "size_bytes": null,
       "license": "see THIRD_PARTY_NOTICES.md"
     }
-  ]
+  ],
+  "zenodo": {
+    "doi": "10.5281/zenodo.23908803",
+    "doi_url": "https://doi.org/10.5281/zenodo.23908803",
+    "record_id": "23908803",
+    "verification_status": "doi_supplied_by_depositor_file_inventory_unverified",
+    "notes": "Individual model direct links, sizes and SHA256 checksums are not verified; artifact statuses remain pending until confirmed."
+  }
 }
