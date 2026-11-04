@@ -24,4 +24,4 @@ scripts/figures/figure5/plot_figure5.py
 scripts/figures/figure6/plot_case_studies.py
 ```
 
-The published repository includes reference labels, scaffold splits, expert scores, ablation results, and selected attribution caches under `data/`. Trained model weights and upstream TabPFN checkpoints are not included; see `models/README.md`. Output directories are created under `outputs/` and are gitignored.
+The published repository includes reference labels, scaffold splits, expert scores, ablation results, and selected attribution caches under `data/`. Trained model weights are associated with [Zenodo DOI 10.5281/zenodo.23908803](https://doi.org/10.5281/zenodo.23908803) (file inventory not independently verified); upstream TabPFN checkpoints must be obtained separately. See `models/README.md`. Output directories are created under `outputs/` and are gitignored.
