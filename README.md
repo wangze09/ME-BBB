@@ -1,12 +1,12 @@
 # ME-BBB: Mechanism-Enhanced Blood–Brain Barrier Permeability Prediction
 
-[中文说明](README_zh-CN.md) · [Workflow](docs/workflow.md) · [Environment](docs/environment.md) · [Input data guide](data/README.md) · [Model acquisition](models/README.md) · [Third-party licenses](THIRD_PARTY_NOTICES.md)
+[中文说明](README_zh-CN.md) · [Workflow](docs/workflow.md) · [Environment](docs/environment.md) · [Input data guide](data/README.md) · [Model acquisition](models/README.md) · [Zenodo model weights](https://doi.org/10.5281/zenodo.23908803) · [Third-party licenses](THIRD_PARTY_NOTICES.md)
 
 ME-BBB integrates an ECFP4/Morgan radius-2 fingerprint (2,048 bits) with five transport/permeability expert probability scores for **BCRP, MDR1, MRP, PAMPA, and Caco-2**. Each expert uses TabPFN 3.5 with RDKit2DNormalized descriptors; an ExtraTrees classifier combines the five predictions with the molecular fingerprint for BBB permeability classification. The research workflow uses predefined Bemis–Murcko scaffold partitions.
 
 ## Contents
 
-This is a **code-and-data release**. It contains published molecular datasets, predefined scaffold partitions, derived expert scores, ablation tables and SHAP attribution caches, as well as Python scripts for mechanistic-expert training, baseline comparison, BBB model fitting, feature ablation, and manuscript Figures 2–6, plus configuration and basic smoke tests. The public data files are available in [`data/`](data/README.md), including all ten BBB train/validation/test partitions and all five expert scaffold collections. **Pretrained TabPFN checkpoints, fitted model weights, and manuscript figure outputs are not bundled**; model-weight distribution on Zenodo is pending. Reproducing model fitting still requires compatible dependencies and externally obtained authorized weights. Source and cached data availability alone does not establish full numerical reproducibility.
+This is a **code-and-data release**. It contains published molecular datasets, predefined scaffold partitions, derived expert scores, ablation tables and SHAP attribution caches, as well as Python scripts for mechanistic-expert training, baseline comparison, BBB model fitting, feature ablation, and manuscript Figures 2–6, plus configuration and basic smoke tests. The public data files are available in [`data/`](data/README.md), including all ten BBB train/validation/test partitions and all five expert scaffold collections. **Pretrained TabPFN checkpoints, fitted model weights, and manuscript figure outputs are not bundled**; the fitted model artifacts are linked at [Zenodo DOI: 10.5281/zenodo.23908803](https://doi.org/10.5281/zenodo.23908803). Reproducing model fitting still requires compatible dependencies and externally obtained authorized weights. Source and cached data availability alone does not establish full numerical reproducibility.
 
 ## Repository map
 
@@ -19,6 +19,12 @@ This is a **code-and-data release**. It contains published molecular datasets, p
 | BBB model training and tuning | `scripts/train_bbb/tune_and_train_bbb.py` |
 | Feature ablation | `scripts/analyses/ablation/run_ablation.py` |
 | Manuscript Figures 2–6 | `scripts/figures/figure2/` through `scripts/figures/figure6/` |
+
+## Zenodo model weights
+
+The five fitted TabPFN 3.5 mechanistic expert models and final BBB ExtraTrees classifier are archived separately from GitHub. **Zenodo DOI:** [10.5281/zenodo.23908803](https://doi.org/10.5281/zenodo.23908803). The upstream TabPFN 3.5 checkpoint is a separate dependency governed by Prior Labs' license. Refer to [models/README.md](models/README.md) for licensing and download information.
+
+The DOI was supplied by the depositor. Individual files, public download URLs, file sizes, and SHA-256 checksums have not yet been independently verified; consequently, automated model downloads are not enabled in the manifest.
 
 ## Environment
 
