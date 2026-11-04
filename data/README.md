@@ -1,6 +1,6 @@
 # ME-BBB data directory
 
-This directory contains the research data and derived results currently committed to this repository. The pretrained TabPFN checkpoint and fitted model weights are distributed separately (model-weight release on Zenodo is pending); see [models/README.md](../models/README.md).
+This directory contains the research data and derived results currently committed to this repository. The pretrained TabPFN checkpoint and fitted model weights are distributed separately (model archive DOI: [10.5281/zenodo.23908803](https://doi.org/10.5281/zenodo.23908803); individual files not independently verified); see [models/README.md](../models/README.md).
 
 ## Directory layout
 
