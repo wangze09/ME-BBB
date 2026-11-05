@@ -1,4 +1,4 @@
-# ME-BBB: Mechanism-Enhanced Blood–Brain Barrier Permeability Prediction
+# ME-BBB: Endpoint-Resolved Mechanistic Attribution for Blood–Brain Barrier Permeability Prediction
 
 [中文说明](README_zh-CN.md) · [Workflow](docs/workflow.md) · [Environment](docs/environment.md) · [Input data guide](data/README.md) · [Model acquisition](models/README.md) · [Zenodo model weights](https://doi.org/10.5281/zenodo.23908803) · [Third-party licenses](THIRD_PARTY_NOTICES.md)
 
