@@ -13,8 +13,13 @@
   },
   "scaffold_splits": 10,
   "expert_scaffold_splits": 5,
-  "note": "Recorded configuration/host environment only, not evidence of model or original training dependency lock.",
-  "reported_compute_environment": {
+  "note": "The two audited installed Conda environments are recorded separately; neither is a verified lockfile for every historical training run. Model configuration is independent of environment provenance.",
+  "environment_audit_file": "configs/audited_environments.json",
+  "workflow_environments": {
+    "conventional_ml_bbb_shap_figures": "base",
+    "tabpfn_expert_training_and_inference": "tabpfn35"
+  },
+  "previous_host_snapshot": {
     "observation_date": "2026-11-03",
     "python": "3.11.17",
     "torch": "2.7.1+cu118",
