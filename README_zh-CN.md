@@ -14,22 +14,31 @@ ME-BBB 使用 **ECFP4（Morgan radius 2，2048 bit）** 和五个机制专家（
 
 DOI 由上传者提供；目前尚未独立核实公开文件清单、直接下载地址、大小及 SHA-256，所以模型清单中的自动下载仍保持待验证状态。
 
-## 环境信息（2026-11-03 提供）
+## 计算环境
 
-- Python **3.11.17**；PyTorch **2.7.1+cu118**（其 CUDA 构建版本是 **11.8**）。
-- NVIDIA 驱动 **580.95.05**，两张 **Tesla T4（每张约 15 GB）**。
-- `nvidia-smi` 显示的 CUDA **13.0** 是驱动支持版本，不能写成 PyTorch 的实际 CUDA 构建版本。
-- TabPFN、RDKit 等依赖的原始训练版本尚待补充，详见 [环境文档](docs/environment.md)。
+ME-BBB 实际使用**两套独立的 Conda 环境**。下列版本来自 2026 年 11 月服务器环境审计，并非每次历史实验的精确依赖锁定文件。
+
+| 软件 | `base`：传统 ML / BBB / SHAP / 绘图 | `tabpfn35`：TabPFN 专家 |
+| --- | --- | --- |
+| Python | 3.13.9 | 3.11.17 |
+| scikit-learn | 1.6.1 | 1.9.1 |
+| RDKit | 2025.09.3 | 2026.09.1 |
+| TabPFN | 未安装 | 9.2.0（ModelVersion.V3_5） |
+| XGBoost | 3.1.2 | 未安装 |
+| SHAP | 0.51.0 | 未安装 |
+| PyTorch | 2.9.1+cu128 | 2.7.1+cu118 |
+| PyTorch CUDA 构建版本 | 12.8 | 11.8 |
+
+传统机器学习和 SHAP 等分析主要在 CPU 上执行；`base` 虽然安装了支持 CUDA 的 PyTorch，但不能据此认定这些分析使用了 GPU。两套环境所在服务器均报告 2 张 Tesla T4 显卡和 NVIDIA 580.95.05 驱动。详细依赖及溯源信息参见 [环境文档](docs/environment.md) 和 [环境审计 JSON](configs/audited_environments.json)。
 
 ## 基础检查
 
 ```bash
-conda create -n me-bbb python=3.11 -y
-conda activate me-bbb
-python -m pip install -r requirements/dev.txt
-python -m pytest tests -q
+conda env create -f environment.yml
+conda activate me-bbb-dev
+python -m unittest discover -s tests -v
 ```
 
-GPU 专家训练需另行安装 `requirements/tabpfn.txt`，并从 Prior Labs 官方获取具有合法使用权限的 TabPFN 3.5 checkpoint。`requirements/` 未冒充已验证的原始锁定环境。论文 DOI 和作者引文后续补充。
+上述为开发和静态测试环境，**不是原始训练环境的精确复刻**。TabPFN 专家应在独立的 Python 3.11 环境中安装 `requirements/tabpfn.txt` 及兼容的 GPU PyTorch，并从 Prior Labs 官方获取具有合法使用权限的 TabPFN 3.5 checkpoint。`requirements/` 未冒充已验证的原始锁定环境。论文 DOI 和作者引文后续补充。
 
 主脚本位于 `scripts/train_experts/`、`scripts/train_bbb/`、`scripts/analyses/ablation/` 和 `scripts/figures/`。输入约定见 [data/README.md](data/README.md)，模型说明见 [models/README.md](models/README.md)。原始代码按仓库 MIT 许可证发布，但 TabPFN 权重、模型输出和第三方数据不受项目 MIT 许可证覆盖。
