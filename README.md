@@ -26,31 +26,32 @@ The five fitted TabPFN 3.5 mechanistic expert models and final BBB ExtraTrees cl
 
 The DOI was supplied by the depositor. Individual files, public download URLs, file sizes, and SHA-256 checksums have not yet been independently verified; consequently, automated model downloads are not enabled in the manifest.
 
-## Environment
+## Computational environments
 
-The supplied GPU-machine metadata (November 3, 2026) is:
+The workflow used **two distinct Conda environments**. The following are installed versions captured in the author's November 2026 audits, **not historical dependency lockfiles**:
 
-| Component | Value |
-| --- | --- |
-| Python | 3.11.17 |
-| PyTorch | 2.7.1+cu118 |
-| PyTorch CUDA build/runtime | 11.8 |
-| NVIDIA driver | 580.95.05 |
-| CUDA version reported by `nvidia-smi` | 13.0 (driver capability, **not** the PyTorch CUDA build) |
-| GPUs | 2 × NVIDIA Tesla T4, 15,360 MiB each |
+| Component | Conventional ML, BBB ExtraTrees, SHAP and plots (`base`) | TabPFN experts (`tabpfn35`) |
+| --- | --- | --- |
+| Python | 3.13.9 | 3.11.17 |
+| scikit-learn | 1.6.1 | 1.9.1 |
+| RDKit | 2025.09.3 | 2026.09.1 |
+| TabPFN | Not installed | 9.2.0 (ModelVersion.V3_5) |
+| XGBoost | 3.1.2 | Not installed |
+| SHAP | 0.51.0 | Not installed |
+| PyTorch | 2.9.1+cu128 | 2.7.1+cu118 |
+| PyTorch CUDA build | 12.8 | 11.8 |
 
-The precise TabPFN, RDKit, scikit-learn, and other training-library versions are **not yet verified**. See [environment details](docs/environment.md). The scripts have not been re-trained on this exact GPU configuration as part of this public release.
+The conventional ML / analysis workflow ran mainly on CPU despite the CUDA-capable PyTorch installation. Both environments were observed on a machine with 2 × Tesla T4 GPUs and NVIDIA driver 580.95.05. See [complete environment provenance](docs/environment.md) and the [machine-readable audit](configs/audited_environments.json). Historical experiment-level dependency locks were not available in the audits.
 
 ## Getting started
 
 ```bash
-conda create -n me-bbb python=3.11 -y
-conda activate me-bbb
-python -m pip install -r requirements/dev.txt
-python -m pytest tests -q
+conda env create -f environment.yml
+conda activate me-bbb-dev
+python -m unittest discover -s tests -v
 ```
 
-The default development installation is CPU-friendly and excludes TabPFN. To train the expert models, install `requirements/tabpfn.txt` in a compatible GPU environment and access the official TabPFN 3.5 checkpoint under its own license. `torch==2.7.1+cu118` describes the supplied machine; do not assume a generic `pip install torch` reproduces that build. See [the upstream PyTorch install guide](https://pytorch.org/get-started/previous-versions/) for platform-specific wheels and [Prior Labs](https://huggingface.co/Prior-Labs/tabpfn_3_5) for official checkpoint access.
+The installation above is a **convenience development and smoke-test environment**, not either audited research environment. It excludes TabPFN. For the expert workflow, use a **separate Python 3.11 environment** and install `requirements/tabpfn.txt` with an appropriate GPU-enabled PyTorch build and access the official TabPFN 3.5 checkpoint under its own license. `torch==2.7.1+cu118` describes the supplied machine; do not assume a generic `pip install torch` reproduces that build. See [the upstream PyTorch install guide](https://pytorch.org/get-started/previous-versions/) for platform-specific wheels and [Prior Labs](https://huggingface.co/Prior-Labs/tabpfn_3_5) for official checkpoint access.
 
 To inspect script interfaces after installing dependencies:
 
