@@ -51,23 +51,45 @@ The conventional ML / analysis workflow ran mainly on CPU despite the CUDA-capab
 
 ## Getting started
 
+Choose the setup for the task you want to run. **These are installation examples, not exact historical environment lockfiles.** The archived experiment used separate `base` (conventional ML/SHAP/figures) and `tabpfn35` (TabPFN experts) environments; see [environment provenance](docs/environment.md).
+
+### 1. Repository checks (no model weights or GPU required)
+
 ```bash
+git clone https://github.com/wangze09/ME-BBB.git
+cd ME-BBB
 conda env create -f environment.yml
 conda activate me-bbb-dev
 python -m unittest discover -s tests -v
 ```
 
-The installation above is a **convenience development and smoke-test environment**, not either audited research environment. It excludes TabPFN. For the expert workflow, use a **separate Python 3.11 environment** and install `requirements/tabpfn.txt` with an appropriate GPU-enabled PyTorch build and access the official TabPFN 3.5 checkpoint under its own license. `torch==2.7.1+cu118` describes the supplied machine; do not assume a generic `pip install torch` reproduces that build. See [the upstream PyTorch install guide](https://pytorch.org/get-started/previous-versions/) for platform-specific wheels and [Prior Labs](https://huggingface.co/Prior-Labs/tabpfn_3_5) for official checkpoint access.
+The `me-bbb-dev` environment is a **convenience development environment** with Python 3.11 and general ML/plotting packages. It is **not** the author's `base` or `tabpfn35` environment, and the unit tests do **not** retrain the models or validate the published numerical results.
 
-To inspect script interfaces after installing dependencies:
+### 2. Classical ML, final BBB model, SHAP, and figures
 
 ```bash
+conda create -n me-bbb-analysis python=3.13 -y
+conda activate me-bbb-analysis
+python -m pip install -r requirements/figures.txt
 python scripts/train_bbb/tune_and_train_bbb.py --help
-python scripts/train_experts/tune_tabpfn_experts.py --help
 python scripts/figures/figure4/plot_figure4.py --help
 ```
 
-The scripts expect data files laid out as described in [data/README.md](data/README.md). Outputs default to `outputs/` (excluded from version control).
+This task-specific installation approximates the workflow performed in the author's `base` environment (audited Python 3.13.9, scikit-learn 1.6.1, RDKit 2025.09.3, and SHAP 0.51.0). The requirements are **not pinned**, so installing them does not guarantee matching those versions. Loading archived scikit-learn/joblib models should use compatible package versions. The workflow consumes exported TabPFN expert-score CSVs and **does not need to import TabPFN** for ordinary BBB/SHAP runs.
+
+### 3. TabPFN 3.5 mechanistic experts (separate GPU environment)
+
+```bash
+conda create -n me-bbb-tabpfn python=3.11 -y
+conda activate me-bbb-tabpfn
+# First install a CUDA-compatible PyTorch build for your machine, if using a GPU.
+python -m pip install -r requirements/tabpfn.txt
+python scripts/train_experts/tune_tabpfn_experts.py --help
+```
+
+This setup is for the expert scripts and approximates the author's `tabpfn35` environment (audited Python 3.11.17, TabPFN package 9.2.0, RDKit 2026.09.1, and PyTorch 2.7.1+cu118). Generic `pip install torch` **does not guarantee** the same CUDA build or an exact reproduction. Obtain the official TabPFN 3.5 checkpoint under the [Prior Labs license](https://huggingface.co/Prior-Labs/tabpfn_3_5) and follow the [PyTorch installation instructions](https://pytorch.org/get-started/locally/) for the target GPU.
+
+The scripts expect inputs laid out as described in [data/README.md](data/README.md); outputs default to `outputs/` (gitignored). For model-file availability and licensing, see [models/README.md](models/README.md). Treat both the saved pickle/joblib files and their source as trusted before loading.
 
 ## License and citation
 
