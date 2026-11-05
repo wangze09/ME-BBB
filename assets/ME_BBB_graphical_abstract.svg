@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="47.6mm" version="1.1" viewBox="0 0 1600 900" width="84.7mm">
+  <title>ME-BBB | scientific TOC vector</title>
+  <desc>Fully editable vector TOC; fonts remain SVG text elements; ECFP4 MACCS RDKFP conventional baselines vs RDKit2D TabPFN v3.5.</desc>
+  <defs/>
+  <rect fill="#FFFFFF" height="900" width="1600" x="0" y="0"/>
+  <g id="title-and-header">
+    <rect fill="#075F69" height="57" rx="12" ry="12" stroke="none" stroke-width="2" width="168" x="48" y="31"/>
+    <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="bold" text-anchor="middle" x="132" y="70">ME-BBB</text>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="47" font-weight="bold" text-anchor="start" x="236" y="76">Endpoint-resolved BBB permeability prediction</text>
+    <line stroke="#087F85" stroke-linecap="round" stroke-width="5" x1="50" x2="1550" y1="119" y2="119"/>
+  </g>
+  <g id="interstage-arrows">
+    <line stroke="#087F85" stroke-linecap="round" stroke-width="5" x1="359" x2="382.2" y1="480" y2="480.0"/>
+    <polygon fill="#087F85" points="392,480 380.3792505067069,487.80757204347987 380.3792505067069,472.19242795652013" stroke="none"/>
+    <line stroke="#087F85" stroke-linecap="round" stroke-width="5" x1="757" x2="781.2" y1="480" y2="480.0"/>
+    <polygon fill="#087F85" points="791,480 779.3792505067069,487.80757204347987 779.3792505067069,472.19242795652013" stroke="none"/>
+    <line stroke="#087F85" stroke-linecap="round" stroke-width="5" x1="1136" x2="1164.2" y1="480" y2="480.0"/>
+    <polygon fill="#087F85" points="1174,480 1162.379250506707,487.80757204347987 1162.379250506707,472.19242795652013" stroke="none"/>
+  </g>
+  <g id="stage-outlines"/>
+  <g id="stage-01-data">
+    <rect fill="#FFFFFF" height="676" rx="21" ry="21" stroke="#B8DADB" stroke-width="3" width="310" x="47" y="158"/>
+    <rect fill="#075F69" height="61" rx="18" ry="18" stroke="none" stroke-width="0" width="310" x="47" y="158"/>
+    <rect fill="#075F69" height="30" rx="0" ry="0" stroke="none" stroke-width="0" width="310" x="47" y="189"/>
+    <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="bold" text-anchor="start" x="67" y="200">01. DATA</text>
+    <rect fill="#FFF0EB" height="99" rx="15" ry="15" stroke="none" stroke-width="2" width="268" x="68" y="241"/>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="bold" text-anchor="middle" x="202.0" y="300">BBB labels</text>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" x="202.0" y="391">5 auxiliary endpoints</text>
+    <rect fill="#E9F7F5" height="63" rx="12" ry="12" stroke="none" stroke-width="2" width="266" x="69" y="422"/>
+    <circle cx="94" cy="453" fill="#087F85" r="8" stroke="#087F85" stroke-width="1"/>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" text-anchor="start" x="119" y="464">PAMPA</text>
+    <rect fill="#E9F7F5" height="63" rx="12" ry="12" stroke="none" stroke-width="2" width="266" x="69" y="500"/>
+    <circle cx="94" cy="531" fill="#087F85" r="8" stroke="#087F85" stroke-width="1"/>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" text-anchor="start" x="119" y="542">Caco-2</text>
+    <rect fill="#FFF0EB" height="63" rx="12" ry="12" stroke="none" stroke-width="2" width="266" x="69" y="578"/>
+    <circle cx="94" cy="609" fill="#EB685A" r="8" stroke="#EB685A" stroke-width="1"/>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" text-anchor="start" x="119" y="620">MDR1</text>
+    <rect fill="#FFF0EB" height="63" rx="12" ry="12" stroke="none" stroke-width="2" width="266" x="69" y="656"/>
+    <circle cx="94" cy="687" fill="#EB685A" r="8" stroke="#EB685A" stroke-width="1"/>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" text-anchor="start" x="119" y="698">BCRP</text>
+    <rect fill="#FFF0EB" height="63" rx="12" ry="12" stroke="none" stroke-width="2" width="266" x="69" y="734"/>
+    <circle cx="94" cy="765" fill="#EB685A" r="8" stroke="#EB685A" stroke-width="1"/>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" text-anchor="start" x="119" y="776">MRP</text>
+  </g>
+  <g id="stage-02-expert-benchmarking">
+    <rect fill="#FFFFFF" height="676" rx="21" ry="21" stroke="#B8DADB" stroke-width="3" width="356" x="399" y="158"/>
+    <rect fill="#075F69" height="61" rx="18" ry="18" stroke="none" stroke-width="0" width="356" x="399" y="158"/>
+    <rect fill="#075F69" height="30" rx="0" ry="0" stroke="none" stroke-width="0" width="356" x="399" y="189"/>
+    <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="bold" text-anchor="start" x="419" y="200">02. MODEL BENCHMARKS</text>
+    <rect fill="#F6FBFA" height="206" rx="16" ry="16" stroke="#B8DADB" stroke-width="2" width="312" x="421" y="243"/>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" x="577.0" y="290">Conventional ML</text>
+    <text fill="#46656E" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" x="577.0" y="331">ECFP4 · MACCS · RDKFP</text>
+    <rect fill="#E9F7F5" height="53" rx="12" ry="12" stroke="none" stroke-width="2" width="62" x="436" y="359"/>
+    <text fill="#075F69" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" x="467.0" y="392.98">RF</text>
+    <rect fill="#E9F7F5" height="53" rx="12" ry="12" stroke="none" stroke-width="2" width="62" x="507" y="359"/>
+    <text fill="#075F69" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" x="538.0" y="392.98">ET</text>
+    <rect fill="#E9F7F5" height="53" rx="12" ry="12" stroke="none" stroke-width="2" width="74" x="578" y="359"/>
+    <text fill="#075F69" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" x="615.0" y="392.98">XGB</text>
+    <rect fill="#E9F7F5" height="53" rx="12" ry="12" stroke="none" stroke-width="2" width="61" x="661" y="359"/>
+    <text fill="#075F69" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" x="691.5" y="392.98">SVM</text>
+    <text fill="#46656E" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" x="577.0" y="493">vs.</text>
+    <rect fill="#E9F7F5" height="239" rx="16" ry="16" stroke="#087F85" stroke-width="3" width="312" x="421" y="526"/>
+    <text fill="#075F69" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" text-anchor="middle" x="577.0" y="605">TabPFN v3.5</text>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" x="577.0" y="665">RDKit2D descriptors</text>
+    <rect fill="#075F69" height="42" rx="10" ry="10" stroke="none" stroke-width="2" width="214" x="470" y="704"/>
+    <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" x="577.0" y="734">SELECTED</text>
+  </g>
+  <g id="stage-03-predicted-scores">
+    <rect fill="#FFFFFF" height="676" rx="21" ry="21" stroke="#B8DADB" stroke-width="3" width="341" x="794" y="158"/>
+    <rect fill="#075F69" height="61" rx="18" ry="18" stroke="none" stroke-width="0" width="341" x="794" y="158"/>
+    <rect fill="#075F69" height="30" rx="0" ry="0" stroke="none" stroke-width="0" width="341" x="794" y="189"/>
+    <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" text-anchor="start" x="814" y="200">03. MECHANISM EXPERTS</text>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" x="964.5" y="267">Predicted mechanism</text>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" x="964.5" y="299">scores</text>
+    <rect fill="#259F98" height="73" rx="14" ry="14" stroke="none" stroke-width="2" width="289" x="820" y="334"/>
+    <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" x="964.5" y="382.06">PAMPA</text>
+    <rect fill="#087F85" height="73" rx="14" ry="14" stroke="none" stroke-width="2" width="289" x="820" y="423"/>
+    <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" x="964.5" y="471.06">Caco-2</text>
+    <rect fill="#EB685A" height="73" rx="14" ry="14" stroke="none" stroke-width="2" width="289" x="820" y="512"/>
+    <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" x="964.5" y="560.06">MDR1</text>
+    <rect fill="#D9574D" height="73" rx="14" ry="14" stroke="none" stroke-width="2" width="289" x="820" y="601"/>
+    <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" x="964.5" y="649.06">BCRP</text>
+    <rect fill="#F48B7F" height="73" rx="14" ry="14" stroke="none" stroke-width="2" width="289" x="820" y="690"/>
+    <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" x="964.5" y="738.06">MRP</text>
+  </g>
+  <g id="stage-04-feature-fusion">
+    <rect fill="#FFFFFF" height="676" rx="21" ry="21" stroke="#B8DADB" stroke-width="3" width="377" x="1176" y="158"/>
+    <rect fill="#075F69" height="61" rx="18" ry="18" stroke="none" stroke-width="0" width="377" x="1176" y="158"/>
+    <rect fill="#075F69" height="30" rx="0" ry="0" stroke="none" stroke-width="0" width="377" x="1176" y="189"/>
+    <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" text-anchor="start" x="1196" y="200">04. BBB PREDICTION</text>
+    <rect fill="#E9F7F5" height="206" rx="16" ry="16" stroke="none" stroke-width="2" width="158" x="1193" y="251"/>
+    <rect fill="#FFF0EB" height="206" rx="16" ry="16" stroke="none" stroke-width="2" width="138" x="1398" y="251"/>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" x="1272.0" y="302">ECFP4</text>
+    <text fill="#46656E" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" x="1272.0" y="335">2,048 bits</text>
+    <rect fill="#259F98" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1205.5" y="365"/>
+    <rect fill="#58B6B0" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1228.5" y="365"/>
+    <rect fill="#58B6B0" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1251.5" y="365"/>
+    <rect fill="#259F98" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1274.5" y="365"/>
+    <rect fill="#58B6B0" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1297.5" y="365"/>
+    <rect fill="#259F98" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1320.5" y="365"/>
+    <rect fill="#259F98" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1205.5" y="388"/>
+    <rect fill="#58B6B0" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1228.5" y="388"/>
+    <rect fill="#259F98" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1251.5" y="388"/>
+    <rect fill="#259F98" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1274.5" y="388"/>
+    <rect fill="#58B6B0" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1297.5" y="388"/>
+    <rect fill="#58B6B0" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1320.5" y="388"/>
+    <rect fill="#259F98" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1205.5" y="411"/>
+    <rect fill="#259F98" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1228.5" y="411"/>
+    <rect fill="#58B6B0" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1251.5" y="411"/>
+    <rect fill="#58B6B0" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1274.5" y="411"/>
+    <rect fill="#259F98" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1297.5" y="411"/>
+    <rect fill="#259F98" height="18" rx="3" ry="3" stroke="none" stroke-width="0" width="18" x="1320.5" y="411"/>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="bold" text-anchor="middle" x="1467.0" y="302">5 expert</text>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="bold" text-anchor="middle" x="1467.0" y="335">scores</text>
+    <rect fill="#259F98" height="61" rx="4" ry="4" stroke="none" stroke-width="2" width="17" x="1412.5" y="365"/>
+    <rect fill="#087F85" height="61" rx="4" ry="4" stroke="none" stroke-width="2" width="17" x="1435.5" y="365"/>
+    <rect fill="#EB685A" height="61" rx="4" ry="4" stroke="none" stroke-width="2" width="17" x="1458.5" y="365"/>
+    <rect fill="#D9574D" height="61" rx="4" ry="4" stroke="none" stroke-width="2" width="17" x="1481.5" y="365"/>
+    <rect fill="#F48B7F" height="61" rx="4" ry="4" stroke="none" stroke-width="2" width="17" x="1504.5" y="365"/>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="51" font-weight="bold" text-anchor="middle" x="1374" y="412">+</text>
+    <line stroke="#087F85" stroke-linecap="round" stroke-width="6" x1="1364.5" x2="1364.5" y1="470" y2="494.1"/>
+    <polygon fill="#087F85" points="1364.5,506 1355.019376804346,491.8890899010012 1373.980623195654,491.8890899010012" stroke="none"/>
+    <rect fill="#EAF4F8" height="130" rx="18" ry="18" stroke="#4B8EAE" stroke-width="3" width="303" x="1213" y="538"/>
+    <text fill="#075F69" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" x="1364.5" y="589">ExtraTrees</text>
+    <text fill="#15323A" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="bold" text-anchor="middle" x="1364.5" y="634">BBB classifier</text>
+    <line stroke="#087F85" stroke-linecap="round" stroke-width="5" x1="1364.5" x2="1364.5" y1="678" y2="702.8"/>
+    <polygon fill="#087F85" points="1364.5,714 1355.5770605217374,700.7191434362364 1373.4229394782626,700.7191434362364" stroke="none"/>
+    <rect fill="#259F98" height="71" rx="13" ry="13" stroke="none" stroke-width="2" width="139" x="1214" y="737"/>
+    <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" x="1283.5" y="784.06">BBB+</text>
+    <rect fill="#EB685A" height="71" rx="13" ry="13" stroke="none" stroke-width="2" width="139" x="1374" y="737"/>
+    <text fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" x="1443.5" y="784.06">BBB−</text>
+  </g>
+</svg>
