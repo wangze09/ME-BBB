@@ -8,6 +8,10 @@
 
 Scripts are kept close to the archived research implementation. Scaffold split generation and raw data curation scripts are not provided; the predefined scaffold CSV partitions and selected source/derived data are published under `data/`. The individual script `--help` options are authoritative for their supported inputs and outputs.
 
+## Environment assignment
+
+The final BBB ExtraTrees, classical ML benchmarks, SHAP attribution, ablations and figures were run in the author's `base` analysis environment (Python 3.13.9, scikit-learn 1.6.1, RDKit 2025.09.3, SHAP 0.51.0). TabPFN 3.5 expert training/inference used the separate `tabpfn35` environment (Python 3.11.17, TabPFN 9.2.0, RDKit 2026.09.1). Expert-score CSVs connect the two stages. These package versions are from later environment audits, not exact historical lockfiles; see [environment provenance](environment.md).
+
 ## Script entrances
 
 ```text
