@@ -37,14 +37,44 @@ ME-BBB 实际使用**两套独立的 Conda 环境**。下列版本来自 2026 �
 
 传统机器学习和 SHAP 等分析主要在 CPU 上执行；`base` 虽然安装了支持 CUDA 的 PyTorch，但不能据此认定这些分析使用了 GPU。两套环境所在服务器均报告 2 张 Tesla T4 显卡和 NVIDIA 580.95.05 驱动。详细依赖及溯源信息参见 [环境文档](docs/environment.md) 和 [环境审计 JSON](configs/audited_environments.json)。
 
-## 基础检查
+## Getting started：按任务选择环境
+
+下列命令是**便于安装和测试的参考方案**，并非对你原始 `base` 和 `tabpfn35` 环境的精确锁定复刻。实际环境版本与分工见 [环境说明](docs/environment.md)。
+
+### 1. 仓库基础检查（无需 GPU 或模型权重）
 
 ```bash
+git clone https://github.com/wangze09/ME-BBB.git
+cd ME-BBB
 conda env create -f environment.yml
 conda activate me-bbb-dev
 python -m unittest discover -s tests -v
 ```
 
-上述为开发和静态测试环境，**不是原始训练环境的精确复刻**。TabPFN 专家应在独立的 Python 3.11 环境中安装 `requirements/tabpfn.txt` 及兼容的 GPU PyTorch，并从 Prior Labs 官方获取具有合法使用权限的 TabPFN 3.5 checkpoint。`requirements/` 未冒充已验证的原始锁定环境。论文 DOI 和作者引文后续补充。
+`me-bbb-dev` 是便利的开发与测试环境（Python 3.11），**不是论文使用的两套实际研究环境之一**。上述检查不代表重训模型或复现论文全部数值。
+
+### 2. 传统机器学习、最终 BBB、SHAP 与绘图
+
+```bash
+conda create -n me-bbb-analysis python=3.13 -y
+conda activate me-bbb-analysis
+python -m pip install -r requirements/figures.txt
+python scripts/train_bbb/tune_and_train_bbb.py --help
+python scripts/figures/figure4/plot_figure4.py --help
+```
+
+该安装方案对应原始 `base` 环境的用途，审计版本为 Python 3.13.9、scikit-learn 1.6.1、RDKit 2025.09.3 和 SHAP 0.51.0。**依赖没有锁定版本**，不能保证安装结果与审计环境完全相同。BBB/SHAP 阶段读取已导出的五个专家分数 CSV，通常不需要在该环境中安装 TabPFN。
+
+### 3. 五个 TabPFN 3.5 机制专家（单独 GPU 环境）
+
+```bash
+conda create -n me-bbb-tabpfn python=3.11 -y
+conda activate me-bbb-tabpfn
+# 如需使用 GPU，先安装与服务器 CUDA/驱动兼容的 PyTorch
+python -m pip install -r requirements/tabpfn.txt
+python scripts/train_experts/tune_tabpfn_experts.py --help
+```
+
+此方案对应 `tabpfn35` 环境的用途，审计版本为 Python 3.11.17、TabPFN 9.2.0、RDKit 2026.09.1 和 PyTorch 2.7.1+cu118。普通 `pip install torch` **不保证**获得相同的 CUDA 构建；请参考 [PyTorch 官方安装指南](https://pytorch.org/get-started/locally/) 并从 [Prior Labs](https://huggingface.co/Prior-Labs/tabpfn_3_5) 合法获取 TabPFN 3.5 权重。
 
 主脚本位于 `scripts/train_experts/`、`scripts/train_bbb/`、`scripts/analyses/ablation/` 和 `scripts/figures/`。输入约定见 [data/README.md](data/README.md)，模型说明见 [models/README.md](models/README.md)。原始代码按仓库 MIT 许可证发布，但 TabPFN 权重、模型输出和第三方数据不受项目 MIT 许可证覆盖。
