@@ -4,6 +4,12 @@
 
 ME-BBB 使用 **ECFP4（Morgan radius 2，2048 bit）** 和五个机制专家（BCRP、MDR1、MRP、PAMPA、Caco-2）的预测概率，建立基于 ExtraTrees 的 BBB 分类模型。机制专家以 RDKit2DNormalized 描述符和 TabPFN 3.5 为基础，使用预定义的 Bemis–Murcko 骨架划分。
 
+## 图文摘要（Graphical abstract）
+
+![ME-BBB 图文摘要](assets/ME_BBB_graphical_abstract.svg)
+
+[查看或下载可编辑 SVG 原文件](assets/ME_BBB_graphical_abstract.svg)。
+
 ## 本次公开内容
 
 这是**代码与研究数据公开版**，包含训练专家模型、传统算法对照、BBB 模型训练、消融实验及 Figure 2–6 绘图代码；`data/` 目录已公开参考数据、BBB 的十组 train/validation/test scaffold 划分、五个机制端点的 scaffold 划分、专家预测分数及部分图表缓存。**拟合模型权重、TabPFN checkpoint 和最终图件输出尚未随仓库提供**，模型权重对应 [Zenodo DOI：10.5281/zenodo.23908803](https://doi.org/10.5281/zenodo.23908803)。完整重训仍需匹配的运行环境和合法取得的权重，不能仅凭目录齐全认定已经完整复现论文结果。
