@@ -1,4 +1,4 @@
-"""Code-only smoke tests: no raw datasets, GPU or model download needed."""
+"""Lightweight public-release tests: no GPU or model download needed."""
 import ast
 import pathlib
 import re
@@ -14,7 +14,7 @@ class TestPublicCode(unittest.TestCase):
         for path in files:
             ast.parse(path.read_text(encoding='utf-8-sig'),filename=str(path))
     def test_core_files(self):
-        for name in ('README.md','README_zh-CN.md','LICENSE','THIRD_PARTY_NOTICES.md','configs/model_versions.json'):
+        for name in ('README.md','README_zh-CN.md','LICENSE','THIRD_PARTY_NOTICES.md','configs/model_versions.json','configs/audited_environments.json'):
             self.assertTrue((ROOT/name).is_file(),name)
     def test_no_private_workstation_paths(self):
         for path in SCRIPTS.rglob('*.py'):
@@ -33,6 +33,13 @@ class TestPublicCode(unittest.TestCase):
             for i in range(1, 6):
                 self.assertTrue((folder / f'scaffold{i}.csv').is_file())
         self.assertTrue((data / 'derived' / 'expert_scores' / 'bbb_tabpfn35_scores_full_data.csv').is_file())
+    def test_audited_environment_structure(self):
+        import json
+        data = json.loads((ROOT/'configs'/'audited_environments.json').read_text(encoding='utf-8'))
+        self.assertEqual(data['environments']['base']['python'], '3.13.9')
+        self.assertEqual(data['environments']['tabpfn35']['python'], '3.11.17')
+        self.assertFalse(data['historical_metadata_available'])
+
     def test_models_not_bundled(self):
         self.assertFalse(list(ROOT.rglob('*.safetensors')))
         self.assertFalse(list(ROOT.rglob('*.joblib')))
