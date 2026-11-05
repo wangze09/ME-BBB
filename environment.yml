@@ -1,4 +1,6 @@
-name: me-bbb
+# Convenience development / CI-like smoke-test environment only.
+# This is NOT a lockfile for the recorded 'base' or 'tabpfn35' research environments.
+name: me-bbb-dev
 channels:
   - conda-forge
 dependencies:
